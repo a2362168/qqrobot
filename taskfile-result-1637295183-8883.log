@@ -1,0 +1,542 @@
+**************************************************************
+KiwiVM Task File, executed: Thu, 18 Nov 2021 23:13:03 -0500
+**************************************************************
+# cd /home/VentreBot-shadow-1.0-SNAPSHOT/bin && ./VentreBot
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+[0m2021-11-19 12:13:07 V/Net 879112070: Loading server list from cache.[0m
+[92m2021-11-19 12:13:07 I/Net 879112070: Server list: msfwifi.3g.qq.com:8080, 169.47.230.125:10001, 203.205.255.220:8080, 183.47.98.11:80, 170.106.72.156:10001, 60.29.237.214:14000, 36.155.209.114:443.[0m
+[31m2021-11-19 12:13:07 E/Bot 879112070: Failed to load account secrets from local cache. Invalidating cache...
+net.mamoe.mirai.internal.utils.crypto.DecryptionFailedException
+	at net.mamoe.mirai.internal.utils.crypto.TEA.fail(TEA.kt:298)
+	at net.mamoe.mirai.internal.utils.crypto.TEA.doOption$decrypt(TEA.kt:274)
+	at net.mamoe.mirai.internal.utils.crypto.TEA.doOption(TEA.kt:294)
+	at net.mamoe.mirai.internal.utils.crypto.TEA.decrypt(TEA.kt:318)
+	at net.mamoe.mirai.internal.utils.crypto.TEA.decrypt$default(TEA.kt:317)
+	at net.mamoe.mirai.internal.network.components.FileCacheAccountSecretsManager.getSecretsImpl(AccountSecretsManager.kt:198)
+	at net.mamoe.mirai.internal.network.components.FileCacheAccountSecretsManager.getSecrets(AccountSecretsManager.kt:192)
+	at net.mamoe.mirai.internal.network.components.CombinedAccountSecretsManager.getSecrets(AccountSecretsManager.kt:240)
+	at net.mamoe.mirai.internal.network.components.AccountSecretsManagerKt.getSecretsOrCreate(AccountSecretsManager.kt:152)
+	at net.mamoe.mirai.internal.network.components.BotClientHolderImpl.createClient(BotClientHolder.kt:36)
+	at net.mamoe.mirai.internal.network.components.BotClientHolderImpl.access$createClient(BotClientHolder.kt:24)
+	at net.mamoe.mirai.internal.network.components.BotClientHolderImpl$client$2.invoke(BotClientHolder.kt:28)
+	at net.mamoe.mirai.internal.network.components.BotClientHolderImpl$client$2.invoke(BotClientHolder.kt:28)
+	at net.mamoe.mirai.utils.LateinitMutableProperty.getValue(LateinitMutableProperty.kt:38)
+	at net.mamoe.mirai.internal.network.components.BotClientHolderImpl.getClient(BotClientHolder.kt:28)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl.getClient(SsoProcessor.kt:97)
+	at net.mamoe.mirai.internal.network.components.SsoProcessorImpl.login(SsoProcessor.kt:111)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateConnecting$1.invokeSuspend(NettyNetworkHandler.kt:257)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:571)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:678)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:665)
+[0m
+[92m2021-11-19 12:13:09 I/Net 879112070: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[92m2021-11-19 12:13:11 I/Net 879112070: Successfully fetched ecdh public key from server.[0m
+[0m2021-11-19 12:13:12 V/Net 879112070: Send: wtlogin.login[0m
+[0m2021-11-19 12:13:12 V/Net 879112070: Send: wtlogin.login[0m
+[0m2021-11-19 12:13:12 V/Net 879112070: Recv: wtlogin.login[0m
+[0m2021-11-19 12:13:13 V/Net 879112070: Recv: wtlogin.login[0m
+[92m2021-11-19 12:13:13 I/Bot 879112070: Login successful[0m
+[92m2021-11-19 12:13:13 I/Bot 879112070: Saved account secrets to local cache for fast login.[0m
+[0m2021-11-19 12:13:13 V/Net 879112070: Send: StatSvc.register(online)[0m
+[92m2021-11-19 12:13:13 I/Net 879112070: Server time updated, serverTime: 1637295193, diff: 0ms=0.0s[0m
+[0m2021-11-19 12:13:13 V/Net 879112070: Recv: StatSvc.register[0m
+[92m2021-11-19 12:13:13 I/Bot 879112070: Login successful.[0m
+[0m2021-11-19 12:13:13 V/Net 879112070: Loading BdhSession from cache file[0m
+[92m2021-11-19 12:13:13 I/Net 879112070: Start loading stranger list...[0m
+[92m2021-11-19 12:13:13 I/Net 879112070: Syncing friend message history...[0m
+[0m2021-11-19 12:13:13 V/Net 879112070: Send: StatSvc.GetDevLoginInfo(StatSvc.GetDevLoginInfo)[0m
+[92m2021-11-19 12:13:13 I/Net 879112070: Start loading friend list...[0m
+[0m2021-11-19 12:13:13 V/Net 879112070: Send: OidbSvc.0x5d2_0(OidbSvc.0x5d2_0)[0m
+[0m2021-11-19 12:13:13 V/Net 879112070: Send: OidbSvc.0x496(OidbSvc.0x496)[0m
+[0m2021-11-19 12:13:13 V/Net 879112070: Send: friendlist.getFriendGroupList(friendlist.getFriendGroupList)[0m
+[0m2021-11-19 12:13:13 V/Net 879112070: Recv: StatSvc.GetDevLoginInfo[0m
+[92m2021-11-19 12:13:13 I/Net 879112070: No OtherClient online.[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Recv: OidbSvc.0x496[0m
+[92m2021-11-19 12:13:14 I/Net 879112070: Start loading group list...[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Recv: OidbSvc.0x5d2_0[0m
+[92m2021-11-19 12:13:14 I/Net 879112070: Syncing friend message history: Success.[0m
+[92m2021-11-19 12:13:14 I/Net 879112070: Successfully loaded stranger list: 1 in total[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Send: friendlist.GetTroopListReqV2(friendlist.GetTroopListReqV2)[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Recv: friendlist.getFriendGroupList[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Loading friend list: 59/59[0m
+[92m2021-11-19 12:13:14 I/Net 879112070: Successfully loaded friend list: 59 in total[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Recv: friendlist.GetTroopListReqV2[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2021-11-19 12:13:14 V/Net 879112070: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2021-11-19 12:13:15 V/Net 879112070: Recv: friendlist.GetTroopMemberListReq[0m
+[92m2021-11-19 12:13:15 I/Net 879112070: Successfully loaded group list: 12 in total.[0m
+[0m2021-11-19 12:13:15 V/Bot 879112070: Event: BotOnlineEvent(bot=Bot(879112070))[0m
+[92m2021-11-19 12:13:15 I/Bot 879112070: Bot login successful.[0m
+[92m2021-11-19 12:13:15 I/Net 879112070: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2021-11-19 12:13:15 I/Net 879112070: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2021-11-19 12:13:16 I/Net 879112070: Server list: 170.106.84.90:10001, 14.22.9.53:80, 203.205.255.224:8080, msfwifi.3g.qq.com:8080, 169.47.230.125:10001, 36.155.229.173:443, 60.29.237.176:14000.[0m
+[0m2021-11-19 12:13:16 V/Net 879112070: Saving bdh session to cache[0m
+[0m2021-11-19 12:13:16 V/Net 879112070: Saving server list to cache[0m
+[0m2021-11-19 12:13:16 V/Net 879112070: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2021-11-19 12:13:16 V/Net 879112070: Recv: ConfigPushSvc.PushReq[0m
+[0m2021-11-19 12:13:16 V/Net 879112070: Saving bdh session to cache[0m
+[0m2021-11-19 12:13:16 V/Net 879112070: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2021-11-19 12:13:16 V/Net 879112070: Recv: ConfigPushSvc.PushReq[0m
+RepeatHander.handleMessage
+[0m2021-11-19 12:15:03 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 牢饭管饱(2975655909) -> [mirai:image:{0E48899C-DB6E-7CF3-7461-C35208095DB7}.jpg][0m
+RepeatHander.handleMessage
+[0m2021-11-19 12:15:20 V/Bot 879112070: [提瓦特游览指南(795087019)] 深雪厨#100020784(1876652032) -> 拿着精4盾锁的我，看着盾剑感觉盾剑也眉清目秀的[得意][0m
+[0m2021-11-19 12:15:47 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 12:15:47 V/Bot 879112070: [ventre测试群(867206822)] 安克雷奇(3279994851) -> [mirai:at:879112070][0m
+[0m2021-11-19 12:15:47 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 12:15:47 V/Bot 879112070: Group(867206822) <- 欢迎使用涩图机器人，基本使用方法：\n@Ventre 关键字  目前已有的关键字：\n1. 涩图\n2. 色图\n3. 聊天\n如果要查看具体功能，请输入 @Ventre 关键字 help\n例子  @Ventre 涩图 help[0m
+EroImageHandle.handleMessage
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by retrofit2.Platform (file:/home/VentreBot-shadow-1.0-SNAPSHOT/lib/ventre_qq_robot-1.0-SNAPSHOT-all.jar) to constructor java.lang.invoke.MethodHandles$Lookup(java.lang.Class,int)
+WARNING: Please consider reporting this to the maintainers of retrofit2.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[0m2021-11-19 12:16:10 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> [mirai:at:879112070] 涩图[0m
+tag:hanakoizumi_yoruno, page:1, size23: image:YanderImage(id=762061, author=BattlequeenYume, rating=q, sample_url=https://files.yande.re/sample/7b65064672ea0835884b59edea8a590d/yande.re%20762061%20sample%20cameltoe%20dress%20hanakoizumi_yoruno%20no_bra%20pantsu%20skirt_lift%20weapon.jpg, jpeg_url=https://files.yande.re/jpeg/7b65064672ea0835884b59edea8a590d/yande.re%20762061%20cameltoe%20dress%20hanakoizumi_yoruno%20no_bra%20pantsu%20skirt_lift%20weapon.jpg)
+下载图片成功:https://files.yande.re/jpeg/7b65064672ea0835884b59edea8a590d/yande.re%20762061%20cameltoe%20dress%20hanakoizumi_yoruno%20no_bra%20pantsu%20skirt_lift%20weapon.jpg
+[0m2021-11-19 12:16:13 V/Net 879112070: Send: ImgStore.GroupPicUp(ImgStore.GroupPicUp)[0m
+[0m2021-11-19 12:16:13 V/Net 879112070: Recv: ImgStore.GroupPicUp[0m
+[0m2021-11-19 12:16:13 V/Net 879112070: [Highway] Uploading group image to 129.226.107.115:443, size=909.91 KiB[0m
+[0m2021-11-19 12:16:19 V/Net 879112070: [Highway] Uploading group image: succeed at 150 KiB/s[0m
+[0m2021-11-19 12:16:19 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 12:16:20 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 12:16:20 V/Bot 879112070: Group(556208166) <- [mirai:image:{FE3E4005-0BE9-FB6F-8BD1-B2D67C6A7945}.jpg][0m
+RepeatHander.handleMessage
+[0m2021-11-19 12:16:24 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> 不知道能不能行[0m
+RepeatHander.handleMessage
+[0m2021-11-19 12:16:37 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 牢饭管饱(2975655909) -> [mirai:at:3279994851] 色图[0m
+RepeatHander.handleMessage
+[0m2021-11-19 12:16:47 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 牢饭管饱(2975655909) -> [mirai:image:{0E48899C-DB6E-7CF3-7461-C35208095DB7}.jpg][0m
+EroImageHandle.handleMessage
+[0m2021-11-19 12:16:52 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 牢饭管饱(2975655909) -> [mirai:at:879112070] 色图[0m
+[LoliconData(pid=82929762, author=ryara, title=綾波, urls=ImageUrl(original=https://i.pximg.net/img-original/img/2020/07/12/20/00/37/82929762_p0.jpg)), 
+]下载图片成功:https://i.pximg.net/img-original/img/2020/07/12/20/00/37/82929762_p0.jpg
+[0m2021-11-19 12:16:57 V/Net 879112070: Send: ImgStore.GroupPicUp(ImgStore.GroupPicUp)[0m
+[0m2021-11-19 12:16:57 V/Net 879112070: Recv: ImgStore.GroupPicUp[0m
+[0m2021-11-19 12:16:57 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 12:16:58 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 12:16:58 V/Bot 879112070: Group(556208166) <- [mirai:image:{AC27C910-F250-9E9A-36DA-1A4624CF7376}.jpg][0m
+[31m2021-11-19 12:21:13 E/ExternalResourceLeakObserver: A resource leak occurred, use ExternalResource.close to avoid it!! (holder=net.mamoe.mirai.internal.utils.ExternalResourceImplByFile$ResourceHolder@630bcf6a). Add jvm option `-Dmirai.resource.creation.stack.enabled=true` to show creation stack track[0m
+[0m2021-11-19 12:22:54 V/Bot 879112070: Event: FriendNickChangedEvent(friend=Friend(3279994851), from=安克雷奇, to=ventre)[0m
+RepeatHander.handleMessage
+[0m2021-11-19 12:34:36 V/Bot 879112070: [提瓦特游览指南(795087019)] 怡宝#100041962(327616610) -> 这不继续反向定轨？[0m
+RepeatHander.handleMessage
+[0m2021-11-19 12:55:07 V/Bot 879112070: [提瓦特游览指南(795087019)] z(2606261464) -> 已经好久没在抽卡方面感觉到欧了[0m
+ChatHandler.handleMessage
+[0m2021-11-19 13:01:02 V/Bot 879112070: 安克雷奇(3279994851) -> 心爱[0m
+[0m2021-11-19 13:01:06 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 13:01:06 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 13:01:06 V/Bot 879112070: Friend(3279994851) <- [mirai:at:3279994851] 先发现和你衣不称身[0m
+ChatHandler.handleMessage
+[0m2021-11-19 13:01:21 V/Bot 879112070: [ventre测试群(867206822)] ventre(3279994851) -> [mirai:at:879112070] 心脏[0m
+[0m2021-11-19 13:01:23 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 13:01:24 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 13:01:24 V/Bot 879112070: Group(867206822) <- [mirai:at:3279994851] 好好笑><[0m
+RepeatHander.handleMessage
+[0m2021-11-19 13:05:07 V/Bot 879112070: [提瓦特游览指南(795087019)] 深雪厨#100020784(1876652032) -> [mirai:at:327616610] 88爆伤大剑我也有兴趣，到时候看看谁更非[0m
+RepeatHander.handleMessage
+[0m2021-11-19 13:22:31 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 心野游魂(2415633409) -> 舰队 boss 不要开新的了[0m
+RepeatHander.handleMessage
+[0m2021-11-19 13:22:52 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 心野游魂(2415633409) -> 这个月你们打的好勤快呀[0m
+RepeatHander.handleMessage
+[0m2021-11-19 13:24:41 V/Bot 879112070: [提瓦特游览指南(795087019)] 怡宝#100041962(327616610) -> 你赶紧歇逼吧[0m
+RepeatHander.handleMessage
+[0m2021-11-19 13:44:06 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 牢饭管饱(2975655909) -> 我没怎么肝碧蓝了都[0m
+[0m2021-11-19 13:52:23 V/Bot 879112070: Event: BotOfflineEvent.Dropped(bot=Bot(879112070), cause=HeartbeatFailedException: StatHeartbeat, recoverable=true, cause=PacketTimeoutException(message=Timeout receiving Heartbeat response, cause=kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms), reconnect=true)[0m
+[91m2021-11-19 13:52:23 W/Bot 879112070: Connection lost, reconnecting... (HeartbeatFailedException: StatHeartbeat, recoverable=true, cause=PacketTimeoutException(message=Timeout receiving Heartbeat response, cause=kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms))[0m
+[91m2021-11-19 13:52:23 W/Net 879112070: HeartbeatFailedException: StatHeartbeat, recoverable=true, cause=PacketTimeoutException(message=Timeout receiving Heartbeat response, cause=kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms)
+HeartbeatFailedException: StatHeartbeat, recoverable=true, cause=PacketTimeoutException(message=Timeout receiving Heartbeat response, cause=kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1$1.invoke(NettyNetworkHandler.kt:349)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1$1.invoke(NettyNetworkHandler.kt:349)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.setStateImpl$mirai_core(NetworkHandlerSupport.kt:251)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1.invoke(NettyNetworkHandler.kt:395)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$StateOK$heartbeatJobs$1.invoke(NettyNetworkHandler.kt:348)
+	at net.mamoe.mirai.internal.network.components.TimeBasedHeartbeatSchedulerImpl$launchHeartbeatJobAsync$1.invokeSuspend(HeartbeatScheduler.kt:108)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:33)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:571)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:750)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:678)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:665)
+Caused by: PacketTimeoutException(message=Timeout receiving Heartbeat response, cause=kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms)
+	... 13 more
+Caused by: kotlinx.coroutines.TimeoutCancellationException: Timed out waiting for 5000 ms
+	at kotlinx.coroutines.TimeoutKt.TimeoutCancellationException(Timeout.kt:186)
+	at kotlinx.coroutines.TimeoutCoroutine.run(Timeout.kt:156)
+	at kotlinx.coroutines.EventLoopImplBase$DelayedRunnableTask.run(EventLoop.common.kt:497)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:274)
+	at kotlinx.coroutines.DefaultExecutor.run(DefaultExecutor.kt:69)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[0m
+[0m2021-11-19 13:52:23 V/Net 879112070: Loading server list from cache.[0m
+[92m2021-11-19 13:52:23 I/Net 879112070: Server list: 170.106.84.90:10001, 14.22.9.53:80, 203.205.255.224:8080, msfwifi.3g.qq.com:8080, 169.47.230.125:10001, 36.155.229.173:443, 60.29.237.176:14000.[0m
+[92m2021-11-19 13:52:23 I/Net 879112070: ECDH key is valid.[0m
+[0m2021-11-19 13:52:23 V/Net 879112070: Send: wtlogin.exchange_emp[0m
+[0m2021-11-19 13:52:24 V/Net 879112070: Recv: wtlogin.exchange_emp[0m
+[92m2021-11-19 13:52:24 I/Bot 879112070: Saved account secrets to local cache for fast login.[0m
+[0m2021-11-19 13:52:24 V/Net 879112070: Send: StatSvc.register(online)[0m
+[92m2021-11-19 13:52:24 I/Net 879112070: Server time updated, serverTime: 1637301144, diff: 0ms=0.0s[0m
+[0m2021-11-19 13:52:24 V/Net 879112070: Recv: StatSvc.register[0m
+[92m2021-11-19 13:52:24 I/Bot 879112070: Login successful.[0m
+[0m2021-11-19 13:52:24 V/Bot 879112070: Event: BotOnlineEvent(bot=Bot(879112070))[0m
+[0m2021-11-19 13:52:24 V/Bot 879112070: Event: BotReloginEvent(bot=Bot(879112070), cause=null)[0m
+[92m2021-11-19 13:52:24 I/Bot 879112070: Reconnected successfully in 0.674s.[0m
+[92m2021-11-19 13:52:24 I/Net 879112070: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2021-11-19 13:52:24 I/Net 879112070: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2021-11-19 13:52:27 I/Net 879112070: Server list: 203.205.255.217:8080, msfwifi.3g.qq.com:8080, 49.51.39.163:10001, 117.144.228.48:443, 14.22.9.84:80, 169.47.230.125:10001, 221.198.69.95:14000.[0m
+[0m2021-11-19 13:52:27 V/Net 879112070: Saving bdh session to cache[0m
+[0m2021-11-19 13:52:27 V/Net 879112070: Saving server list to cache[0m
+[0m2021-11-19 13:52:27 V/Net 879112070: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2021-11-19 13:52:27 V/Net 879112070: Recv: ConfigPushSvc.PushReq[0m
+[0m2021-11-19 13:52:27 V/Net 879112070: Saving bdh session to cache[0m
+[0m2021-11-19 13:52:27 V/Net 879112070: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2021-11-19 13:52:27 V/Net 879112070: Recv: ConfigPushSvc.PushReq[0m
+RepeatHander.handleMessage
+[0m2021-11-19 13:52:48 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 我永远喜欢蕾赛(3114556852) -> [mirai:image:{DA626B10-E989-2A96-E9C6-1180A7A44F31}.jpg][0m
+RepeatHander.handleMessage
+[0m2021-11-19 13:52:52 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 我永远喜欢蕾赛(3114556852) -> 泪目[0m
+RepeatHander.handleMessage
+[0m2021-11-19 13:52:57 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 我永远喜欢蕾赛(3114556852) -> 终于来了[0m
+RepeatHander.handleMessage
+[0m2021-11-19 13:57:45 V/Bot 879112070: [提瓦特游览指南(795087019)] 深雪厨#100020784(1876652032) -> 我武器池某种意义上也是狠非好吗[0m
+RepeatHander.handleMessage
+[0m2021-11-19 13:58:42 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> 我发现白龙25级并不能用，没满破吃不到科技加成[0m
+RepeatHander.handleMessage
+[0m2021-11-19 13:58:58 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> 会少一堆装填[0m
+RepeatHander.handleMessage
+[0m2021-11-19 13:59:17 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 心野游魂(2415633409) -> 我也发现了[0m
+RepeatHander.handleMessage
+[0m2021-11-19 13:59:36 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 心野游魂(2415633409) -> 也就推图的时候没大差，对轴是对不上的[0m
+RepeatHander.handleMessage
+[0m2021-11-19 14:00:10 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 心野游魂(2415633409) -> 我的彩飞机还差 6 张 …[0m
+ChatHandler.handleMessage
+[0m2021-11-19 14:14:39 V/Bot 879112070: [ventre测试群(867206822)] ventre(3279994851) -> [mirai:at:879112070] 心脏间歇[0m
+[0m2021-11-19 14:14:44 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 14:14:44 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 14:14:44 V/Bot 879112070: Group(867206822) <- [mirai:at:3279994851] 好好笑><[0m
+RepeatHander.handleMessage
+[0m2021-11-19 14:23:37 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 心野游魂(2415633409) -> [mirai:image:{D9E839EA-94AA-DC3E-4194-67C1D1BFDE68}.jpg][0m
+RepeatHander.handleMessage
+[0m2021-11-19 14:31:40 V/Bot 879112070: [提瓦特游览指南(795087019)] 苏打粉#100798202(1196061685) -> [mirai:image:{497B8EE5-3848-6591-1CB1-501B8C8A144F}.png]派蒙问答里面正确答案是啊嘟[0m
+ChatHandler.handleMessage
+[0m2021-11-19 14:44:44 V/Bot 879112070: 安克雷奇(3279994851) -> 汇报当前状态[0m
+[0m2021-11-19 14:44:48 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 14:44:48 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 14:44:48 V/Bot 879112070: Friend(3279994851) <- [mirai:at:3279994851] {face:84}明知道你是錯的人，明知道這不是緣分，但我還奮不顧身[0m
+ChatHandler.handleMessage
+[0m2021-11-19 14:45:17 V/Bot 879112070: 安克雷奇(3279994851) -> 汇报目前状态[0m
+[0m2021-11-19 14:45:20 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 14:45:20 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 14:45:20 V/Bot 879112070: Friend(3279994851) <- [mirai:at:3279994851] 哦了哦了哦了,咱聊点别的吧[0m
+ChatHandler.handleMessage
+[0m2021-11-19 14:45:32 V/Bot 879112070: [ventre测试群(867206822)] ventre(3279994851) -> [mirai:at:879112070] [0m
+[0m2021-11-19 14:45:35 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 14:45:35 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 14:45:35 V/Bot 879112070: Group(867206822) <- [mirai:at:3279994851] 未获取到相关信息[0m
+EroImageHandle.handleMessage
+[0m2021-11-19 14:55:35 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 派大星顶住（涩图哥）(1057240352) -> [mirai:at:879112070] 色图 雪风[0m
+[LoliconData(pid=70332498, author=みんとあいす, title=白スクゆきかぜさま, urls=ImageUrl(original=https://i.pximg.net/img-original/img/2018/08/22/20/35/37/70332498_p0.png)), 
+]下载图片成功:https://i.pximg.net/img-original/img/2018/08/22/20/35/37/70332498_p0.png
+[0m2021-11-19 14:55:39 V/Net 879112070: Send: ImgStore.GroupPicUp(ImgStore.GroupPicUp)[0m
+[0m2021-11-19 14:55:39 V/Net 879112070: Recv: ImgStore.GroupPicUp[0m
+[0m2021-11-19 14:55:39 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 14:55:40 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 14:55:40 V/Bot 879112070: Group(556208166) <- [mirai:image:{157843B1-2657-182A-9557-F5BA5CD6CE62}.png][0m
+RepeatHander.handleMessage
+[0m2021-11-19 15:17:00 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 心野游魂(2415633409) -> [mirai:image:{D31981D7-31A4-78C4-A9A5-CEFB3619E323}.jpg][0m
+RepeatHander.handleMessage
+[0m2021-11-19 15:17:05 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 心野游魂(2415633409) -> 这个蓝毒好哇[0m
+RepeatHander.handleMessage
+[0m2021-11-19 15:22:03 V/Bot 879112070: [提瓦特游览指南(795087019)] 深雪厨#100020784(1876652032) -> [mirai:image:{0173C667-F2E0-93BD-BC02-C96B437332B3}.jpg]现在好像实锤是这个武器池[0m
+RepeatHander.handleMessage
+[0m2021-11-19 15:23:56 V/Bot 879112070: [提瓦特游览指南(795087019)] 小羊阔爱#103080316(664204257) -> 任他出，不出八重不抽[0m
+[31m2021-11-19 15:24:13 E/ExternalResourceLeakObserver: A resource leak occurred, use ExternalResource.close to avoid it!! (holder=net.mamoe.mirai.internal.utils.ExternalResourceImplByFile$ResourceHolder@6dcc3d7b). Add jvm option `-Dmirai.resource.creation.stack.enabled=true` to show creation stack track[0m
+RepeatHander.handleMessage
+[0m2021-11-19 15:37:40 V/Bot 879112070: [提瓦特游览指南(795087019)] z(2606261464) -> 我超[0m
+RepeatHander.handleMessage
+[0m2021-11-19 15:37:59 V/Bot 879112070: [提瓦特游览指南(795087019)] z(2606261464) -> 这么快出苍古没原石抽啊[0m
+RepeatHander.handleMessage
+[0m2021-11-19 15:47:58 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 派大星顶住（涩图哥）(1057240352) -> 涩图不涩了[泪奔][0m
+RepeatHander.handleMessage
+[0m2021-11-19 15:48:17 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 派大星顶住（涩图哥）(1057240352) -> 再试试[0m
+EroImageHandle.handleMessage
+[0m2021-11-19 15:48:25 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 派大星顶住（涩图哥）(1057240352) -> [mirai:at:879112070] 色图 雪风[0m
+[LoliconData(pid=69499342, author=繭咲悠, title=ふふん, urls=ImageUrl(original=https://i.pximg.net/img-original/img/2018/07/02/00/34/57/69499342_p0.jpg)), 
+]下载图片成功:https://i.pximg.net/img-original/img/2018/07/02/00/34/57/69499342_p0.jpg
+[0m2021-11-19 15:48:28 V/Net 879112070: Send: ImgStore.GroupPicUp(ImgStore.GroupPicUp)[0m
+[0m2021-11-19 15:48:28 V/Net 879112070: Recv: ImgStore.GroupPicUp[0m
+[0m2021-11-19 15:48:28 V/Net 879112070: [Highway] Uploading group image to 129.226.107.191:443, size=712.24 KiB[0m
+[0m2021-11-19 15:48:33 V/Net 879112070: [Highway] Uploading group image: succeed at 152 KiB/s[0m
+[0m2021-11-19 15:48:33 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 15:48:34 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 15:48:34 V/Bot 879112070: Group(556208166) <- [mirai:image:{1DBEA96B-09A4-AB65-E62B-D5C53AB04348}.jpg][0m
+RepeatHander.handleMessage
+[0m2021-11-19 15:48:53 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 派大星顶住（涩图哥）(1057240352) -> 好耶[色][0m
+[0m2021-11-19 15:52:37 V/Bot 879112070: Event: MemberHonorChangeEvent.Achieve(member=NormalMember(879112070), honorType=TALKATIVE)[0m
+EroImageHandle.handleMessage
+[0m2021-11-19 15:55:06 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 牢饭管饱(2975655909) -> [mirai:at:879112070] 色图[0m
+[LoliconData(pid=79428508, author=トプ/topu, title=タマキ (水着), urls=ImageUrl(original=https://i.pximg.net/img-original/img/2020/02/12/00/00/07/79428508_p0.jpg)), 
+]下载图片成功:https://i.pximg.net/img-original/img/2020/02/12/00/00/07/79428508_p0.jpg
+[0m2021-11-19 15:55:10 V/Net 879112070: Send: ImgStore.GroupPicUp(ImgStore.GroupPicUp)[0m
+[0m2021-11-19 15:55:10 V/Net 879112070: Recv: ImgStore.GroupPicUp[0m
+[0m2021-11-19 15:55:10 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 15:55:11 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 15:55:11 V/Bot 879112070: Group(556208166) <- [mirai:image:{17429E10-F77D-8665-5573-D8AF200EDAC0}.jpg][0m
+[31m2021-11-19 15:55:13 E/ExternalResourceLeakObserver: A resource leak occurred, use ExternalResource.close to avoid it!! (holder=net.mamoe.mirai.internal.utils.ExternalResourceImplByFile$ResourceHolder@69f3a41a). Add jvm option `-Dmirai.resource.creation.stack.enabled=true` to show creation stack track[0m
+EroImageHandle.handleMessage
+[0m2021-11-19 15:55:16 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 牢饭管饱(2975655909) -> [mirai:at:879112070] 色图 拉菲[0m
+[LoliconData(pid=74208145, author=鈴音れな, title=バニーラフィー, urls=ImageUrl(original=https://i.pximg.net/img-original/img/2019/04/15/00/00/02/74208145_p0.png)), 
+]下载图片成功:https://i.pximg.net/img-original/img/2019/04/15/00/00/02/74208145_p0.png
+[0m2021-11-19 15:55:18 V/Net 879112070: Send: ImgStore.GroupPicUp(ImgStore.GroupPicUp)[0m
+[0m2021-11-19 15:55:19 V/Net 879112070: Recv: ImgStore.GroupPicUp[0m
+[0m2021-11-19 15:55:19 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 15:55:19 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 15:55:19 V/Bot 879112070: Group(556208166) <- [mirai:image:{0AE37505-C528-EA05-D469-974973363F32}.png][0m
+RepeatHander.handleMessage
+[0m2021-11-19 15:56:23 V/Bot 879112070: [提瓦特游览指南(795087019)] 怡宝#100041962(327616610) -> 出苍古 那万叶复刻的时候武器放啥[0m
+RepeatHander.handleMessage
+[0m2021-11-19 16:00:04 V/Bot 879112070: [提瓦特游览指南(795087019)] z(2606261464) -> 确实嗷[0m
+RepeatHander.handleMessage
+[0m2021-11-19 16:00:09 V/Bot 879112070: [提瓦特游览指南(795087019)] z(2606261464) -> 不太可能苍古吧[0m
+EroImageHandle.handleMessage
+[0m2021-11-19 16:10:27 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 派大星顶住（涩图哥）(1057240352) -> [mirai:at:879112070]  色图 伊吹[0m
+[LoliconData(pid=84349969, author=フィリン, title=伊吹, urls=ImageUrl(original=https://i.pximg.net/img-original/img/2020/09/13/19/18/14/84349969_p0.jpg)), 
+]下载图片成功:https://i.pximg.net/img-original/img/2020/09/13/19/18/14/84349969_p0.jpg
+[0m2021-11-19 16:10:32 V/Net 879112070: Send: ImgStore.GroupPicUp(ImgStore.GroupPicUp)[0m
+[0m2021-11-19 16:10:32 V/Net 879112070: Recv: ImgStore.GroupPicUp[0m
+[0m2021-11-19 16:10:32 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 16:10:33 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 16:10:33 V/Bot 879112070: Group(556208166) <- [mirai:image:{D272A151-AB3E-88AC-FF59-822F6BECD361}.jpg][0m
+RepeatHander.handleMessage
+[0m2021-11-19 16:11:00 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 派大星顶住（涩图哥）(1057240352) -> 伊吹的就这几个了[快哭了][0m
+[31m2021-11-19 16:11:13 E/ExternalResourceLeakObserver: A resource leak occurred, use ExternalResource.close to avoid it!! (holder=net.mamoe.mirai.internal.utils.ExternalResourceImplByFile$ResourceHolder@2cf13740). Add jvm option `-Dmirai.resource.creation.stack.enabled=true` to show creation stack track[0m
+[31m2021-11-19 16:11:13 E/ExternalResourceLeakObserver: A resource leak occurred, use ExternalResource.close to avoid it!! (holder=net.mamoe.mirai.internal.utils.ExternalResourceImplByFile$ResourceHolder@11bccd2b). Add jvm option `-Dmirai.resource.creation.stack.enabled=true` to show creation stack track[0m
+RepeatHander.handleMessage
+[0m2021-11-19 16:14:52 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> 周末看能不能更新一波[0m
+RepeatHander.handleMessage
+[0m2021-11-19 16:15:19 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> 现在没会员用不了高级排序[0m
+EroImageHandle.handleMessage
+[0m2021-11-19 16:15:49 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> [mirai:at:879112070] 涩图 伊吹 碧蓝航线[0m
+[PixivImage(id=94012007, title=花嫁, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/11/09/00/18/23/94012007_p0_square1200.jpg, pageCount=1), PixivImage(id=93878019, title=伊吹ちゃん, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2021/11/03/00/00/05/93878019_p0_custom1200.jpg, pageCount=1), PixivImage(id=93667107, title=ハロウィンサキュバス伊吹ちゃん, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/10/25/01/05/30/93667107_p0_square1200.jpg, pageCount=1), PixivImage(id=92960264, title=競泳水着な伊吹ちゃん, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/09/23/19/00/30/92960264_p0_square1200.jpg, pageCount=1), PixivImage(id=92540027, title=伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/09/05/23/46/06/92540027_p0_square1200.jpg, pageCount=2), PixivImage(id=92423568, title=伊吹　アズレン4周年アート, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/09/01/08/30/23/92423568_p0_square1200.jpg, pageCount=1), PixivImage(id=91505570, title=无题, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/07/26/03/02/26/91505570_p0_square1200.jpg, pageCount=4), PixivImage(id=91211958, title=水着伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/07/13/09/29/06/91211958_p0_square1200.jpg, pageCount=1), PixivImage(id=90722904, title=skeb依頼　伊吹ちゃん, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/06/22/00/25/13/90722904_p0_square1200.jpg, pageCount=1), PixivImage(id=90493486, title=バニーガール伊吹ちゃん, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/06/12/09/54/37/90493486_p0_square1200.jpg, pageCount=1), PixivImage(id=90106814, title=碧蓝航线, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/05/26/15/17/19/90106814_p0_square1200.jpg, pageCount=2), PixivImage(id=89667943, title=skeb依頼　RQ伊吹ちゃん, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/05/07/15/57/37/89667943_p0_square1200.jpg, pageCount=1), PixivImage(id=89282065, title=伊吹ちゃん, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/04/20/21/15/42/89282065_p0_square1200.jpg, pageCount=1), PixivImage(id=89208396, title=伊吹と初夏の海へ, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2021/04/17/17/58/04/89208396_p0_custom1200.jpg, pageCount=1), PixivImage(id=89102322, title=伊吹, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2021/04/12/09/55/34/89102322_p0_custom1200.jpg, pageCount=1), PixivImage(id=88723137, title=伊吹ちゃん, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2021/03/26/23/00/09/88723137_p0_custom1200.jpg, pageCount=1), PixivImage(id=88576070, title=アズレン 伊吹 パジャマ衣装, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/03/20/15/25/28/88576070_p0_square1200.jpg, pageCount=1), PixivImage(id=87924900, title=アズールレーン, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2021/02/21/00/30/00/87924900_p0_custom1200.jpg, pageCount=1), PixivImage(id=87179553, title=お雑煮を食べる伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/01/20/17/33/47/87179553_p0_square1200.jpg, pageCount=1), PixivImage(id=87105016, title=伊吹(アズールレーン), url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/01/17/09/05/10/87105016_p0_square1200.jpg, pageCount=1), PixivImage(id=87024267, title=あけおめ伊吹ちゃん, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/01/13/16/51/24/87024267_p0_square1200.jpg, pageCount=1), PixivImage(id=86845654, title=無題, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/01/05/22/10/25/86845654_p0_square1200.jpg, pageCount=1), PixivImage(id=86809155, title=Magane Ibuki, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2021/01/04/11/21/46/86809155_p0_custom1200.jpg, pageCount=2), PixivImage(id=86715718, title=伊吹ちゃん, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2021/01/01/09/34/35/86715718_p0_custom1200.jpg, pageCount=2), PixivImage(id=86461440, title=クリスマスな伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/12/22/21/51/45/86461440_p0_square1200.jpg, pageCount=1), PixivImage(id=86241338, title=伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/12/12/01/48/03/86241338_p0_square1200.jpg, pageCount=1), PixivImage(id=86009055, title=アズレン　伊吹春節衣装リメイク, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/11/30/19/44/37/86009055_p0_square1200.jpg, pageCount=1), PixivImage(id=85253331, title=黒いドレスな伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/10/26/15/46/27/85253331_p0_square1200.jpg, pageCount=1), PixivImage(id=84972377, title=伊吹, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2020/10/14/22/39/20/84972377_p0_custom1200.jpg, pageCount=2), PixivImage(id=84358410, title=パーティドレスな伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/09/13/23/45/24/84358410_p0_square1200.jpg, pageCount=1), PixivImage(id=84206351, title=伊吹の闘志は静かに燃ゆる, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/09/07/00/00/33/84206351_p0_square1200.jpg, pageCount=1), PixivImage(id=84200883, title=アズレン 伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/09/06/21/20/28/84200883_p0_square1200.jpg, pageCount=1), PixivImage(id=81761733, title=Vacation Trip, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2020/05/22/15/26/27/81761733_p0_custom1200.jpg, pageCount=2), PixivImage(id=81541551, title=主殿～, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/05/14/11/05/41/81541551_p0_square1200.jpg, pageCount=2), PixivImage(id=81324422, title=伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/05/08/07/31/24/81324422_p0_square1200.jpg, pageCount=1), PixivImage(id=80430106, title=伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/03/29/17/57/16/80430106_p0_square1200.jpg, pageCount=1), PixivImage(id=79237870, title=アズレン 伊吹 春節衣装, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/02/02/16/37/54/79237870_p0_square1200.jpg, pageCount=1), PixivImage(id=79142299, title=旧正月, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/01/28/14/11/25/79142299_p0_square1200.jpg, pageCount=1), PixivImage(id=78905532, title=碧蓝航线, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/01/15/00/10/52/78905532_p0_square1200.jpg, pageCount=1), PixivImage(id=78660237, title=Loli Ibuki, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/01/02/11/17/47/78660237_p0_square1200.jpg, pageCount=1), PixivImage(id=78499090, title=アズールレーン 伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/12/26/11/26/46/78499090_p0_square1200.jpg, pageCount=1), PixivImage(id=78026774, title=小醉的伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/11/28/00/28/48/78026774_p0_square1200.jpg, pageCount=1), PixivImage(id=77517569, title=Black Halloween!, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2019/10/28/05/27/40/77517569_p0_custom1200.jpg, pageCount=2), PixivImage(id=77512994, title=伊吹ちゃん, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/10/27/23/40/34/77512994_p0_square1200.jpg, pageCount=1), PixivImage(id=77456815, title=画稿, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2019/10/24/19/05/18/77456815_p0_custom1200.jpg, pageCount=3), PixivImage(id=77290390, title=秋の伊吹, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2019/10/14/17/55/19/77290390_p0_custom1200.jpg, pageCount=1), PixivImage(id=77274672, title=あ、あるじどの……？, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2019/10/13/22/36/09/77274672_p0_custom1200.jpg, pageCount=1), PixivImage(id=76958011, title=アズレン　伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/09/25/08/07/09/76958011_p0_square1200.jpg, pageCount=1), PixivImage(id=76814913, title=伊吹 宴のかざばな, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/09/16/18/22/44/76814913_p0_square1200.jpg, pageCount=1), PixivImage(id=76673901, title=IBUKI*3, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/09/08/02/06/34/76673901_p0_square1200.jpg, pageCount=3), PixivImage(id=75446686, title=水着伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/06/28/18/11/18/75446686_p0_square1200.jpg, pageCount=1), PixivImage(id=74615357, title=Ibuki, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/05/07/18/31/01/74615357_p0_square1200.jpg, pageCount=1), PixivImage(id=72488985, title=元旦贺图, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/04/16/46/21/72488985_p0_square1200.jpg, pageCount=2), PixivImage(id=72426312, title=謹賀新年, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/01/09/58/01/72426312_p0_square1200.jpg, pageCount=1), PixivImage(id=72414144, title=あけましておめでとうございます、主殿, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/01/00/01/03/72414144_p0_square1200.jpg, pageCount=1), PixivImage(id=72342362, title=伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2018/12/28/10/27/29/72342362_p0_square1200.jpg, pageCount=1), PixivImage(id=70977325, title=？！, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2018/10/02/00/26/34/70977325_p0_square1200.jpg, pageCount=1), PixivImage(id=69659726, title=アズレン絵まとめ8, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2018/07/12/23/40/30/69659726_p0_square1200.jpg, pageCount=4), PixivImage(id=69573373, title=計画艦のこたちrkgk, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2018/07/07/10/04/39/69573373_p0_square1200.jpg, pageCount=3), PixivImage(id=69520123, title=伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2018/07/03/17/21/14/69520123_p0_square1200.jpg, pageCount=1), 
+]tag:伊吹 碧蓝航线, page:1, index:24, size60: image:PixivImage(id=86461440, title=クリスマスな伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/12/22/21/51/45/86461440_p0_square1200.jpg, pageCount=1)
+下载图片成功:https://i.pximg.net/img-original/img/2020/12/22/21/51/45/86461440_p0.jpg
+[0m2021-11-19 16:15:55 V/Net 879112070: Send: ImgStore.GroupPicUp(ImgStore.GroupPicUp)[0m
+[0m2021-11-19 16:15:55 V/Net 879112070: Recv: ImgStore.GroupPicUp[0m
+[0m2021-11-19 16:15:55 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 16:15:57 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 16:15:57 V/Bot 879112070: Group(556208166) <- [mirai:image:{AB3B6FEB-5E63-1658-82EC-6A0741E33ACA}.jpg][0m
+[31m2021-11-19 16:16:13 E/ExternalResourceLeakObserver: A resource leak occurred, use ExternalResource.close to avoid it!! (holder=net.mamoe.mirai.internal.utils.ExternalResourceImplByFile$ResourceHolder@1d171d82). Add jvm option `-Dmirai.resource.creation.stack.enabled=true` to show creation stack track[0m
+RepeatHander.handleMessage
+[0m2021-11-19 16:16:13 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> [mirai:image:{46666370-AB5A-6835-8C39-6DC0F8F2F33D}.png][0m
+RepeatHander.handleMessage
+[0m2021-11-19 16:20:13 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 派大星顶住（涩图哥）(1057240352) -> 芜湖[0m
+RepeatHander.handleMessage
+[0m2021-11-19 16:20:17 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 派大星顶住（涩图哥）(1057240352) -> 好耶[0m
+RepeatHander.handleMessage
+[0m2021-11-19 16:20:30 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 派大星顶住（涩图哥）(1057240352) -> 伊吹 赛高[0m
+EroImageHandle.handleMessage
+getPages hit: 伊吹 碧蓝航线
+[0m2021-11-19 16:21:11 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 派大星顶住（涩图哥）(1057240352) -> [mirai:at:879112070] 涩图 伊吹 碧蓝航线[0m
+[PixivImage(id=94012007, title=花嫁, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/11/09/00/18/23/94012007_p0_square1200.jpg, pageCount=1), PixivImage(id=93878019, title=伊吹ちゃん, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2021/11/03/00/00/05/93878019_p0_custom1200.jpg, pageCount=1), PixivImage(id=93667107, title=ハロウィンサキュバス伊吹ちゃん, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/10/25/01/05/30/93667107_p0_square1200.jpg, pageCount=1), PixivImage(id=92960264, title=競泳水着な伊吹ちゃん, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/09/23/19/00/30/92960264_p0_square1200.jpg, pageCount=1), PixivImage(id=92540027, title=伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/09/05/23/46/06/92540027_p0_square1200.jpg, pageCount=2), PixivImage(id=92423568, title=伊吹　アズレン4周年アート, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/09/01/08/30/23/92423568_p0_square1200.jpg, pageCount=1), PixivImage(id=91505570, title=无题, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/07/26/03/02/26/91505570_p0_square1200.jpg, pageCount=4), PixivImage(id=91211958, title=水着伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/07/13/09/29/06/91211958_p0_square1200.jpg, pageCount=1), PixivImage(id=90722904, title=skeb依頼　伊吹ちゃん, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/06/22/00/25/13/90722904_p0_square1200.jpg, pageCount=1), PixivImage(id=90493486, title=バニーガール伊吹ちゃん, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/06/12/09/54/37/90493486_p0_square1200.jpg, pageCount=1), PixivImage(id=90106814, title=碧蓝航线, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/05/26/15/17/19/90106814_p0_square1200.jpg, pageCount=2), PixivImage(id=89667943, title=skeb依頼　RQ伊吹ちゃん, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/05/07/15/57/37/89667943_p0_square1200.jpg, pageCount=1), PixivImage(id=89282065, title=伊吹ちゃん, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/04/20/21/15/42/89282065_p0_square1200.jpg, pageCount=1), PixivImage(id=89208396, title=伊吹と初夏の海へ, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2021/04/17/17/58/04/89208396_p0_custom1200.jpg, pageCount=1), PixivImage(id=89102322, title=伊吹, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2021/04/12/09/55/34/89102322_p0_custom1200.jpg, pageCount=1), PixivImage(id=88723137, title=伊吹ちゃん, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2021/03/26/23/00/09/88723137_p0_custom1200.jpg, pageCount=1), PixivImage(id=88576070, title=アズレン 伊吹 パジャマ衣装, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/03/20/15/25/28/88576070_p0_square1200.jpg, pageCount=1), PixivImage(id=87924900, title=アズールレーン, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2021/02/21/00/30/00/87924900_p0_custom1200.jpg, pageCount=1), PixivImage(id=87179553, title=お雑煮を食べる伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/01/20/17/33/47/87179553_p0_square1200.jpg, pageCount=1), PixivImage(id=87105016, title=伊吹(アズールレーン), url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/01/17/09/05/10/87105016_p0_square1200.jpg, pageCount=1), PixivImage(id=87024267, title=あけおめ伊吹ちゃん, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/01/13/16/51/24/87024267_p0_square1200.jpg, pageCount=1), PixivImage(id=86845654, title=無題, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2021/01/05/22/10/25/86845654_p0_square1200.jpg, pageCount=1), PixivImage(id=86809155, title=Magane Ibuki, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2021/01/04/11/21/46/86809155_p0_custom1200.jpg, pageCount=2), PixivImage(id=86715718, title=伊吹ちゃん, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2021/01/01/09/34/35/86715718_p0_custom1200.jpg, pageCount=2), PixivImage(id=86461440, title=クリスマスな伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/12/22/21/51/45/86461440_p0_square1200.jpg, pageCount=1), PixivImage(id=86241338, title=伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/12/12/01/48/03/86241338_p0_square1200.jpg, pageCount=1), PixivImage(id=86009055, title=アズレン　伊吹春節衣装リメイク, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/11/30/19/44/37/86009055_p0_square1200.jpg, pageCount=1), PixivImage(id=85253331, title=黒いドレスな伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/10/26/15/46/27/85253331_p0_square1200.jpg, pageCount=1), PixivImage(id=84972377, title=伊吹, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2020/10/14/22/39/20/84972377_p0_custom1200.jpg, pageCount=2), PixivImage(id=84358410, title=パーティドレスな伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/09/13/23/45/24/84358410_p0_square1200.jpg, pageCount=1), PixivImage(id=84206351, title=伊吹の闘志は静かに燃ゆる, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/09/07/00/00/33/84206351_p0_square1200.jpg, pageCount=1), PixivImage(id=84200883, title=アズレン 伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/09/06/21/20/28/84200883_p0_square1200.jpg, pageCount=1), PixivImage(id=81761733, title=Vacation Trip, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2020/05/22/15/26/27/81761733_p0_custom1200.jpg, pageCount=2), PixivImage(id=81541551, title=主殿～, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/05/14/11/05/41/81541551_p0_square1200.jpg, pageCount=2), PixivImage(id=81324422, title=伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/05/08/07/31/24/81324422_p0_square1200.jpg, pageCount=1), PixivImage(id=80430106, title=伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/03/29/17/57/16/80430106_p0_square1200.jpg, pageCount=1), PixivImage(id=79237870, title=アズレン 伊吹 春節衣装, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/02/02/16/37/54/79237870_p0_square1200.jpg, pageCount=1), PixivImage(id=79142299, title=旧正月, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/01/28/14/11/25/79142299_p0_square1200.jpg, pageCount=1), PixivImage(id=78905532, title=碧蓝航线, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/01/15/00/10/52/78905532_p0_square1200.jpg, pageCount=1), PixivImage(id=78660237, title=Loli Ibuki, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/01/02/11/17/47/78660237_p0_square1200.jpg, pageCount=1), PixivImage(id=78499090, title=アズールレーン 伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/12/26/11/26/46/78499090_p0_square1200.jpg, pageCount=1), PixivImage(id=78026774, title=小醉的伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/11/28/00/28/48/78026774_p0_square1200.jpg, pageCount=1), PixivImage(id=77517569, title=Black Halloween!, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2019/10/28/05/27/40/77517569_p0_custom1200.jpg, pageCount=2), PixivImage(id=77512994, title=伊吹ちゃん, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/10/27/23/40/34/77512994_p0_square1200.jpg, pageCount=1), PixivImage(id=77456815, title=画稿, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2019/10/24/19/05/18/77456815_p0_custom1200.jpg, pageCount=3), PixivImage(id=77290390, title=秋の伊吹, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2019/10/14/17/55/19/77290390_p0_custom1200.jpg, pageCount=1), PixivImage(id=77274672, title=あ、あるじどの……？, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2019/10/13/22/36/09/77274672_p0_custom1200.jpg, pageCount=1), PixivImage(id=76958011, title=アズレン　伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/09/25/08/07/09/76958011_p0_square1200.jpg, pageCount=1), PixivImage(id=76814913, title=伊吹 宴のかざばな, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/09/16/18/22/44/76814913_p0_square1200.jpg, pageCount=1), PixivImage(id=76673901, title=IBUKI*3, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/09/08/02/06/34/76673901_p0_square1200.jpg, pageCount=3), PixivImage(id=75446686, title=水着伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/06/28/18/11/18/75446686_p0_square1200.jpg, pageCount=1), PixivImage(id=74615357, title=Ibuki, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/05/07/18/31/01/74615357_p0_square1200.jpg, pageCount=1), PixivImage(id=72488985, title=元旦贺图, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/04/16/46/21/72488985_p0_square1200.jpg, pageCount=2), PixivImage(id=72426312, title=謹賀新年, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/01/09/58/01/72426312_p0_square1200.jpg, pageCount=1), PixivImage(id=72414144, title=あけましておめでとうございます、主殿, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/01/00/01/03/72414144_p0_square1200.jpg, pageCount=1), PixivImage(id=72342362, title=伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2018/12/28/10/27/29/72342362_p0_square1200.jpg, pageCount=1), PixivImage(id=70977325, title=？！, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2018/10/02/00/26/34/70977325_p0_square1200.jpg, pageCount=1), PixivImage(id=69659726, title=アズレン絵まとめ8, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2018/07/12/23/40/30/69659726_p0_square1200.jpg, pageCount=4), PixivImage(id=69573373, title=計画艦のこたちrkgk, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2018/07/07/10/04/39/69573373_p0_square1200.jpg, pageCount=3), PixivImage(id=69520123, title=伊吹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2018/07/03/17/21/14/69520123_p0_square1200.jpg, pageCount=1), 
+]tag:伊吹 碧蓝航线, page:1, index:17, size60: image:PixivImage(id=87924900, title=アズールレーン, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2021/02/21/00/30/00/87924900_p0_custom1200.jpg, pageCount=1)
+[31m2021-11-19 16:21:13 E/ExternalResourceLeakObserver: A resource leak occurred, use ExternalResource.close to avoid it!! (holder=net.mamoe.mirai.internal.utils.ExternalResourceImplByFile$ResourceHolder@69b0b94e). Add jvm option `-Dmirai.resource.creation.stack.enabled=true` to show creation stack track[0m
+getHttpResponse failed:https://i.pximg.net/img-original/img/2021/02/21/00/30/00/87924900_p0.jpg下载图片成功:https://i.pximg.net/img-original/img/2021/02/21/00/30/00/87924900_p0.png
+[0m2021-11-19 16:21:16 V/Net 879112070: Send: ImgStore.GroupPicUp(ImgStore.GroupPicUp)[0m
+[0m2021-11-19 16:21:16 V/Net 879112070: Recv: ImgStore.GroupPicUp[0m
+[0m2021-11-19 16:21:16 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 16:21:17 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 16:21:17 V/Bot 879112070: Group(556208166) <- [mirai:image:{F883EFD7-EA91-F733-2C31-28679079CA3C}.png][0m
+EroImageHandle.handleMessage
+[0m2021-11-19 16:29:04 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 牢饭管饱(2975655909) -> [mirai:at:879112070] 色图 企业[0m
+[LoliconData(pid=90198514, author=红白0v0, title=企业的小jiojio, urls=ImageUrl(original=https://i.pximg.net/img-original/img/2021/05/30/15/55/36/90198514_p1.jpg)), 
+]下载图片成功:https://i.pximg.net/img-original/img/2021/05/30/15/55/36/90198514_p1.jpg
+[0m2021-11-19 16:29:08 V/Net 879112070: Send: ImgStore.GroupPicUp(ImgStore.GroupPicUp)[0m
+[0m2021-11-19 16:29:08 V/Net 879112070: Recv: ImgStore.GroupPicUp[0m
+[0m2021-11-19 16:29:08 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 16:29:09 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 16:29:09 V/Bot 879112070: Group(556208166) <- [mirai:image:{EC2A4893-13F3-5E3F-E155-1DEEC07510B7}.jpg][0m
+[31m2021-11-19 16:29:13 E/ExternalResourceLeakObserver: A resource leak occurred, use ExternalResource.close to avoid it!! (holder=net.mamoe.mirai.internal.utils.ExternalResourceImplByFile$ResourceHolder@4cdec80f). Add jvm option `-Dmirai.resource.creation.stack.enabled=true` to show creation stack track[0m
+RepeatHander.handleMessage
+[0m2021-11-19 16:36:04 V/Bot 879112070: [提瓦特游览指南(795087019)] 深雪厨#100020784(1876652032) -> [mirai:image:{C822B7C9-1F17-A08B-6914-7EB3EBB0C568}.jpg][0m
+RepeatHander.handleMessage
+[0m2021-11-19 16:36:21 V/Bot 879112070: [提瓦特游览指南(795087019)] 深雪厨#100020784(1876652032) -> 这个小程序233[0m
+RepeatHander.handleMessage
+[0m2021-11-19 16:38:15 V/Bot 879112070: [提瓦特游览指南(795087019)] 深雪厨#100020784(1876652032) -> 小保底老歪，还有谁[泪奔][0m
+EroImageHandle.handleMessage
+[0m2021-11-19 16:39:10 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 派大星顶住（涩图哥）(1057240352) -> [mirai:at:879112070] 色图 安克雷奇[0m
+[LoliconData(pid=92321150, author=Maria, title=アンカレッジ, urls=ImageUrl(original=https://i.pximg.net/img-original/img/2021/08/28/15/52/01/92321150_p0.jpg)), 
+]下载图片成功:https://i.pximg.net/img-original/img/2021/08/28/15/52/01/92321150_p0.jpg
+[0m2021-11-19 16:39:14 V/Net 879112070: Send: ImgStore.GroupPicUp(ImgStore.GroupPicUp)[0m
+[0m2021-11-19 16:39:15 V/Net 879112070: Recv: ImgStore.GroupPicUp[0m
+[0m2021-11-19 16:39:15 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 16:39:15 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 16:39:15 V/Bot 879112070: Group(556208166) <- [mirai:image:{D132EF73-5D9A-D871-662F-EB887358E486}.jpg][0m
+EroImageHandle.handleMessage
+[0m2021-11-19 16:39:29 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 派大星顶住（涩图哥）(1057240352) -> [mirai:at:879112070] 色图 雪风 碧蓝航线[0m
+[LoliconData(pid=80137823, author=ししょー🦇, title=と…とくべつなのだぞ…っ, urls=ImageUrl(original=https://i.pximg.net/img-original/img/2020/03/15/18/02/09/80137823_p1.jpg)), 
+]下载图片成功:https://i.pximg.net/img-original/img/2020/03/15/18/02/09/80137823_p1.jpg
+[0m2021-11-19 16:39:29 V/Net 879112070: Send: ImgStore.GroupPicUp(ImgStore.GroupPicUp)[0m
+[0m2021-11-19 16:39:29 V/Net 879112070: Recv: ImgStore.GroupPicUp[0m
+[0m2021-11-19 16:39:29 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 16:39:30 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 16:39:30 V/Bot 879112070: Group(556208166) <- [mirai:image:{5ED88020-0D9A-054F-633D-7CD3CD2B927D}.jpg][0m
+[31m2021-11-19 16:40:13 E/ExternalResourceLeakObserver: A resource leak occurred, use ExternalResource.close to avoid it!! (holder=net.mamoe.mirai.internal.utils.ExternalResourceImplByFile$ResourceHolder@3b7c812a). Add jvm option `-Dmirai.resource.creation.stack.enabled=true` to show creation stack track[0m
+RepeatHander.handleMessage
+[0m2021-11-19 17:36:20 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 堕世之翼(1027315344) -> 好耶[0m
+RepeatHander.handleMessage
+[0m2021-11-19 17:36:33 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 堕世之翼(1027315344) -> 终于有个色的了[0m
+ChatHandler.handleMessage
+[0m2021-11-19 17:43:20 V/Bot 879112070: [ventre测试群(867206822)] ventre(3279994851) -> [mirai:at:879112070] 切克闹[0m
+[0m2021-11-19 17:43:24 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 17:43:24 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 17:43:24 V/Bot 879112070: Group(867206822) <- [mirai:at:3279994851] 药药~切克闹~[0m
+RepeatHander.handleMessage
+[0m2021-11-19 18:06:25 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 月轩(2819702107) -> @安克雷奇色图[0m
+[0m2021-11-19 18:06:34 V/Bot 879112070: Event: GroupRecall(bot=Bot(879112070), authorId=2819702107, messageIds=[31387], messageInternalIds=[190216425], messageTime=1637316385, operator=NormalMember(2819702107), group=Group(556208166), author=NormalMember(2819702107))[0m
+RepeatHander.handleMessage
+[0m2021-11-19 18:26:35 V/Bot 879112070: [提瓦特游览指南(795087019)] 苏打粉#100798202(1196061685) -> 这次伞兵公子女士[0m
+ChatHandler.handleMessage
+[0m2021-11-19 19:07:51 V/Bot 879112070: [ventre测试群(867206822)] ventre(3279994851) -> [mirai:at:879112070] 穷开心[0m
+[0m2021-11-19 19:07:56 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 19:07:57 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 19:07:57 V/Bot 879112070: Group(867206822) <- [mirai:at:3279994851] 还不会爱[0m
+EroImageHandle.handleMessage
+[0m2021-11-19 19:13:00 V/Bot 879112070: 安克雷奇(3279994851) -> 色图 创口贴[0m
+
+[0m2021-11-19 19:13:00 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 19:13:01 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 19:13:01 V/Bot 879112070: Friend(3279994851) <- 找不到 "创口贴" 的图片[0m
+[31m2021-11-19 19:13:13 E/ExternalResourceLeakObserver: A resource leak occurred, use ExternalResource.close to avoid it!! (holder=net.mamoe.mirai.internal.utils.ExternalResourceImplByFile$ResourceHolder@1e2270ca). Add jvm option `-Dmirai.resource.creation.stack.enabled=true` to show creation stack track[0m
+[31m2021-11-19 19:13:13 E/ExternalResourceLeakObserver: A resource leak occurred, use ExternalResource.close to avoid it!! (holder=net.mamoe.mirai.internal.utils.ExternalResourceImplByFile$ResourceHolder@72b4d089). Add jvm option `-Dmirai.resource.creation.stack.enabled=true` to show creation stack track[0m
+ChatHandler.handleMessage
+[0m2021-11-19 19:13:20 V/Bot 879112070: 安克雷奇(3279994851) -> 涩图。创口贴[0m
+[0m2021-11-19 19:13:24 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 19:13:24 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 19:13:24 V/Bot 879112070: Friend(3279994851) <- [mirai:at:3279994851] 虽然我很聪明，但也不可能全部都懂哦[0m
+EroImageHandle.handleMessage
+[0m2021-11-19 19:13:29 V/Bot 879112070: 安克雷奇(3279994851) -> 涩图 创口贴[0m
+[PixivImage(id=85662806, title=无题, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/11/14/16/52/45/85662806_p0_square1200.jpg, pageCount=1), PixivImage(id=85170048, title=无题, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2020/10/22/19/21/08/85170048_p0_custom1200.jpg, pageCount=3), PixivImage(id=81708570, title=老摸鱼怪了, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/05/20/11/12/56/81708570_p0_square1200.jpg, pageCount=3), PixivImage(id=79555570, title=酷酷的女孩纸, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2020/02/17/16/25/19/79555570_p0_square1200.jpg, pageCount=1), PixivImage(id=59870593, title=11.9临摹, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2016/11/09/17/37/09/59870593_p0_square1200.jpg, pageCount=1), PixivImage(id=54189728, title=圣诞劫, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2015/12/23/23/20/25/54189728_p0_square1200.jpg, pageCount=1), PixivImage(id=18419410, title=got a cold，ahahahahahaha, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2011/04/26/12/17/57/18419410_p0_square1200.jpg, pageCount=1), 
+]tag:创口贴, page:1, index:1, size7: image:PixivImage(id=85170048, title=无题, url=https://i.pximg.net/c/250x250_80_a2/custom-thumb/img/2020/10/22/19/21/08/85170048_p0_custom1200.jpg, pageCount=3)
+下载图片成功:https://i.pximg.net/img-master/img/2020/10/22/19/21/08/85170048_p0_master1200.jpg
+下载图片成功:https://i.pximg.net/img-master/img/2020/10/22/19/21/08/85170048_p1_master1200.jpg
+下载图片成功:https://i.pximg.net/img-master/img/2020/10/22/19/21/08/85170048_p2_master1200.jpg
+[0m2021-11-19 19:13:36 V/Net 879112070: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2021-11-19 19:13:37 V/Net 879112070: Recv: LongConn.OffPicUp[0m
+[0m2021-11-19 19:13:37 V/Net 879112070: [Highway] Uploading private image to 129.226.107.115:8080, size=863.84 KiB[0m
+[0m2021-11-19 19:13:42 V/Net 879112070: [Highway] Uploading private image: succeed at 160 KiB/s[0m
+[0m2021-11-19 19:13:42 V/Net 879112070: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2021-11-19 19:13:42 V/Net 879112070: Recv: LongConn.OffPicUp[0m
+[0m2021-11-19 19:13:42 V/Net 879112070: [Highway] Uploading private image to 129.226.107.115:8080, size=632.17 KiB[0m
+[0m2021-11-19 19:13:47 V/Net 879112070: [Highway] Uploading private image: succeed at 150 KiB/s[0m
+[0m2021-11-19 19:13:47 V/Net 879112070: Send: LongConn.OffPicUp(LongConn.OffPicUp)[0m
+[0m2021-11-19 19:13:47 V/Net 879112070: Recv: LongConn.OffPicUp[0m
+[0m2021-11-19 19:13:47 V/Net 879112070: [Highway] Uploading private image to 129.226.107.191:443, size=908.18 KiB[0m
+[0m2021-11-19 19:13:53 V/Net 879112070: [Highway] Uploading private image: succeed at 157 KiB/s[0m
+[0m2021-11-19 19:13:53 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 19:13:54 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 19:13:54 V/Bot 879112070: Friend(3279994851) <- [mirai:image:{E018FD6A-2EC6-AD09-DF19-FCA1F9EFF6D1}.jpg][mirai:image:{8138A7AB-331E-4F9F-4D8A-A9655963EA7E}.jpg][mirai:image:{96CB82A8-9C00-7723-4FD4-2622360EA125}.jpg][0m
+EroImageHandle.handleMessage
+[0m2021-11-19 19:17:31 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 派大星顶住（涩图哥）(1057240352) -> [mirai:at:879112070] 色图 雪风 碧蓝航线[0m
+[LoliconData(pid=69419738, author=繭咲悠, title=雪風様ー, urls=ImageUrl(original=https://i.pximg.net/img-original/img/2018/06/27/00/29/06/69419738_p0.jpg)), 
+]下载图片成功:https://i.pximg.net/img-original/img/2018/06/27/00/29/06/69419738_p0.jpg
+[0m2021-11-19 19:17:34 V/Net 879112070: Send: ImgStore.GroupPicUp(ImgStore.GroupPicUp)[0m
+[0m2021-11-19 19:17:34 V/Net 879112070: Recv: ImgStore.GroupPicUp[0m
+[0m2021-11-19 19:17:34 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 19:17:35 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 19:17:37 V/Bot 879112070: Group(556208166) <- [mirai:image:{0AF0E2CA-3309-2D91-5918-1A5984DB2620}.jpg][0m
+EroImageHandle.handleMessage
+[0m2021-11-19 19:36:39 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 派大星顶住（涩图哥）(1057240352) -> [mirai:at:879112070] 涩图 雪风[0m
+[PixivImage(id=74135019, title=ケモミミ, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/04/10/13/34/35/74135019_p0_square1200.jpg, pageCount=2), PixivImage(id=74085305, title=[対魔忍] 秋山凜子ちゃん！, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/04/07/11/52/59/74085305_p0_square1200.jpg, pageCount=1), PixivImage(id=74075993, title=雪風　模写練習, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/04/06/22/19/27/74075993_p0_square1200.jpg, pageCount=1), PixivImage(id=74068034, title=[対魔忍] 秋山凜子ちゃん！ [塗前], url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/04/06/13/18/49/74068034_p0_square1200.jpg, pageCount=1), PixivImage(id=74054606, title=雪风, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/04/05/18/12/21/74054606_p0_square1200.jpg, pageCount=3), PixivImage(id=74046371, title=春节贺图, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/04/05/00/47/20/74046371_p0_square1200.jpg, pageCount=1), PixivImage(id=74021508, title=雪风（莲）, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/04/03/12/43/14/74021508_p0_square1200.jpg, pageCount=1), PixivImage(id=74009938, title=ユキカゼ, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/04/02/18/55/29/74009938_p0_square1200.jpg, pageCount=1), PixivImage(id=73904839, title=凛子さん, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/03/27/22/23/50/73904839_p0_square1200.jpg, pageCount=1), PixivImage(id=73897940, title=ユキカゼ, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/03/27/13/29/47/73897940_p0_square1200.jpg, pageCount=1), PixivImage(id=73872202, title=ドヤ顔ユキカゼちゃん, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/03/25/21/56/28/73872202_p0_square1200.jpg, pageCount=1), PixivImage(id=73854882, title=雪風, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/03/24/21/37/28/73854882_p0_square1200.jpg, pageCount=1), PixivImage(id=73854568, title=丹阳（雪風）, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/03/24/21/25/32/73854568_p0_square1200.jpg, pageCount=1), PixivImage(id=73846290, title=雪风生日快乐！！！, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/03/24/13/05/01/73846290_p0_square1200.jpg, pageCount=1), PixivImage(id=73643680, title=奉仕 メイド 秋山凜子, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/03/12/16/11/19/73643680_p0_square1200.jpg, pageCount=2), PixivImage(id=73593127, title=Slime Ticking, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/04/27/09/00/09/73593127_p0_square1200.jpg, pageCount=1), PixivImage(id=73586986, title=ユキカゼ, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/03/09/13/53/38/73586986_p0_square1200.jpg, pageCount=1), PixivImage(id=73546925, title=水城ゆきかぜちゃん, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/03/06/23/34/42/73546925_p0_square1200.jpg, pageCount=1), PixivImage(id=73413526, title=おはようございます, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/02/27/08/45/00/73413526_p0_square1200.jpg, pageCount=1), PixivImage(id=73408893, title=秋山凜子, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/02/27/00/00/19/73408893_p0_square1200.jpg, pageCount=1), PixivImage(id=73406787, title=お知らせ（水城不知火 一般用）, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/03/02/00/30/32/73406787_p0_square1200.jpg, pageCount=10), PixivImage(id=73373462, title=対魔忍ユキカゼ　その２, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/02/24/22/38/31/73373462_p0_square1200.jpg, pageCount=1), PixivImage(id=73354610, title=対魔忍ユキカゼ, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/02/23/23/49/50/73354610_p0_square1200.jpg, pageCount=1), PixivImage(id=73323878, title=ドット絵　ゆきかぜ, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/02/22/16/42/48/73323878_p0_square1200.jpg, pageCount=1), PixivImage(id=73264961, title=コイカツ！デビュー＆スクショ練習。, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/02/19/00/57/48/73264961_p0_square1200.jpg, pageCount=2), PixivImage(id=73104045, title=DOGDAYS（リクエスト絵）, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/02/10/18/06/13/73104045_p0_square1200.jpg, pageCount=1), PixivImage(id=73065407, title=雪风, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/02/08/14/45/04/73065407_p0_square1200.jpg, pageCount=2), PixivImage(id=73039704, title=ブルーレイでござる, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/02/06/22/00/36/73039704_p0_square1200.jpg, pageCount=1), PixivImage(id=73002143, title=雪风（莲）, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/02/04/13/46/08/73002143_p0_square1200.jpg, pageCount=1), PixivImage(id=72915226, title=吹耳朵, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/30/16/10/04/72915226_p0_square1200.jpg, pageCount=1), PixivImage(id=72909338, title=ユキカゼトリガーハッピー, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/30/01/07/03/72909338_p0_square1200.jpg, pageCount=1), PixivImage(id=72905812, title=(好)感度3000倍, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/29/22/23/15/72905812_p0_square1200.jpg, pageCount=1), PixivImage(id=72741596, title=雪风花嫁, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/19/22/07/18/72741596_p0_square1200.jpg, pageCount=1), PixivImage(id=72680696, title=ゆきかぜ, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/15/21/54/05/72680696_p0_square1200.jpg, pageCount=1), PixivImage(id=72666213, title=地下都市ヨミハラ, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/14/22/45/54/72666213_p0_square1200.jpg, pageCount=10), PixivImage(id=72646432, title=纏の任務, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/13/22/30/04/72646432_p0_square1200.jpg, pageCount=10), PixivImage(id=72627581, title=水遁の術, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/12/22/30/04/72627581_p0_square1200.jpg, pageCount=10), PixivImage(id=72609651, title=地下都市への入口, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/11/22/30/04/72609651_p0_square1200.jpg, pageCount=10), PixivImage(id=72594106, title=幻影陣, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/10/22/30/03/72594106_p0_square1200.jpg, pageCount=10), PixivImage(id=72587628, title=2018年のクリスマス時の絵, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/10/13/37/51/72587628_p0_square1200.jpg, pageCount=1), PixivImage(id=72560173, title=Mine 2018, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/08/18/34/56/72560173_p0_square1200.jpg, pageCount=1), PixivImage(id=72556976, title=2019 1st, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/08/12/45/29/72556976_p0_square1200.jpg, pageCount=1), PixivImage(id=72551711, title=ゆきかぜちゃん, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/08/00/18/48/72551711_p0_square1200.jpg, pageCount=1), PixivImage(id=72537260, title=ゆきかぜ, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/07/01/34/11/72537260_p0_square1200.jpg, pageCount=1), PixivImage(id=72493455, title=rk詰TMN2018。, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/04/21/44/23/72493455_p0_square1200.jpg, pageCount=4), PixivImage(id=72477366, title=書き初め凜子, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/03/22/15/50/72477366_p0_square1200.jpg, pageCount=2), PixivImage(id=72472953, title=陽炎型 phase 1, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/03/18/01/47/72472953_p0_square1200.jpg, pageCount=1), PixivImage(id=72452191, title=ユキカゼちゃん, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/02/14/42/01/72452191_p0_square1200.jpg, pageCount=1), PixivImage(id=72417340, title=２０１９年　正月, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/01/00/32/38/72417340_p0_square1200.jpg, pageCount=3), PixivImage(id=72340166, title=【絵師一年進化録】あの男の今年の戦い記録, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2018/12/28/04/29/06/72340166_p0_square1200.jpg, pageCount=1), PixivImage(id=72328239, title=冬コミお品書き, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2018/12/27/17/09/48/72328239_p0_square1200.jpg, pageCount=1), PixivImage(id=72301753, title=【莲】年终作--雪风, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2018/12/26/00/38/52/72301753_p0_square1200.jpg, pageCount=1), PixivImage(id=72272022, title=~圣诞快乐~, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2018/12/24/21/04/14/72272022_p0_square1200.jpg, pageCount=1), PixivImage(id=72229073, title=Kitsune Girl, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2018/12/22/19/17/46/72229073_p0_square1200.jpg, pageCount=3), PixivImage(id=72218512, title=となかぜ, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2018/12/22/00/39/29/72218512_p0_square1200.jpg, pageCount=1), PixivImage(id=72212368, title=衣装が違うのです。, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2018/12/21/18/53/39/72212368_p0_square1200.jpg, pageCount=1), PixivImage(id=72210107, title=ミルキーウェイ/冬コミのお品書き, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2018/12/21/15/01/14/72210107_p0_square1200.jpg, pageCount=1), PixivImage(id=72197667, title=なんの自信？, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2018/12/20/17/57/27/72197667_p0_square1200.jpg, pageCount=1), PixivImage(id=72174073, title=水城不知火（後ろGIF）, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2018/12/18/22/32/26/72174073_square1200.jpg, pageCount=1), PixivImage(id=72174050, title=水城不知火（斜め上GIF）, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2018/12/18/22/31/22/72174050_square1200.jpg, pageCount=1), 
+]tag:雪风, page:11, index:36, size52: image:PixivImage(id=72551711, title=ゆきかぜちゃん, url=https://i.pximg.net/c/250x250_80_a2/img-master/img/2019/01/08/00/18/48/72551711_p0_square1200.jpg, pageCount=1)
+下载图片成功:https://i.pximg.net/img-original/img/2019/01/08/00/18/48/72551711_p0.jpg
+[0m2021-11-19 19:36:47 V/Net 879112070: Send: ImgStore.GroupPicUp(ImgStore.GroupPicUp)[0m
+[0m2021-11-19 19:36:47 V/Net 879112070: Recv: ImgStore.GroupPicUp[0m
+[0m2021-11-19 19:36:47 V/Net 879112070: [Highway] Uploading group image to 129.226.107.191:443, size=1918.84 KiB[0m
+[0m2021-11-19 19:36:58 V/Net 879112070: [Highway] Uploading group image: succeed at 169 KiB/s[0m
+[0m2021-11-19 19:36:58 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 19:36:59 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 19:37:01 V/Bot 879112070: Group(556208166) <- [mirai:image:{A4DF8A8E-67FD-CEED-4350-C73EF0C3C28C}.jpg][0m
+[31m2021-11-19 19:37:13 E/ExternalResourceLeakObserver: A resource leak occurred, use ExternalResource.close to avoid it!! (holder=net.mamoe.mirai.internal.utils.ExternalResourceImplByFile$ResourceHolder@4890f060). Add jvm option `-Dmirai.resource.creation.stack.enabled=true` to show creation stack track[0m
+[31m2021-11-19 19:37:13 E/ExternalResourceLeakObserver: A resource leak occurred, use ExternalResource.close to avoid it!! (holder=net.mamoe.mirai.internal.utils.ExternalResourceImplByFile$ResourceHolder@173a4d89). Add jvm option `-Dmirai.resource.creation.stack.enabled=true` to show creation stack track[0m
+[31m2021-11-19 19:37:13 E/ExternalResourceLeakObserver: A resource leak occurred, use ExternalResource.close to avoid it!! (holder=net.mamoe.mirai.internal.utils.ExternalResourceImplByFile$ResourceHolder@1a13cb84). Add jvm option `-Dmirai.resource.creation.stack.enabled=true` to show creation stack track[0m
+[31m2021-11-19 19:37:13 E/ExternalResourceLeakObserver: A resource leak occurred, use ExternalResource.close to avoid it!! (holder=net.mamoe.mirai.internal.utils.ExternalResourceImplByFile$ResourceHolder@4ef770d7). Add jvm option `-Dmirai.resource.creation.stack.enabled=true` to show creation stack track[0m
+RepeatHander.handleMessage
+[0m2021-11-19 19:40:15 V/Bot 879112070: [碧蓝晒鱼场(556208166)] FFumino(1207753709) -> 为什么你们都喜欢看雪风的[0m
+ChatHandler.handleMessage
+[0m2021-11-19 19:44:19 V/Bot 879112070: [ventre测试群(867206822)] ventre(3279994851) -> [mirai:at:879112070] [0m
+[0m2021-11-19 19:44:22 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 19:44:23 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 19:44:25 V/Bot 879112070: Group(867206822) <- [mirai:at:3279994851] 未获取到相关信息[0m
+RepeatHander.handleMessage
+[0m2021-11-19 19:44:47 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> 不是吧，这又没了[0m
+ChatHandler.handleMessage
+[0m2021-11-19 19:45:11 V/Bot 879112070: 安克雷奇(3279994851) -> 在？[0m
+[0m2021-11-19 19:45:14 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 19:45:15 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 19:45:15 V/Bot 879112070: Friend(3279994851) <- [mirai:at:3279994851] 大象腳[0m
+RepeatHander.handleMessage
+[0m2021-11-19 19:46:00 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> 这我都不知道qq是用什么逻辑禁止的[0m
+RepeatHander.handleMessage
+[0m2021-11-19 19:46:05 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> 难道是ip吗[0m
+RepeatHander.handleMessage
+[0m2021-11-19 20:01:13 V/Bot 879112070: [提瓦特游览指南(795087019)] 怡宝#100041962(327616610) -> [mirai:app:{"app":"com.tencent.miniapp_01","config":{"autoSize":0,"ctime":1637323273,"forward":1,"height":0,"token":"2593655af4be8b4bba01af1bcacb250c","type":"normal","width":0},"desc":"哔哩哔哩","extra":{"app_type":1,"appid":100951776,"uin":327616610},"meta":{"detail_1":{"appid":"1109937557","desc":"《原神》小剧场——「蒙德茶会」第四期","gamePoints":"","gamePointsUrl":"","host":{"nick":"怡宝","uin":327616610},"icon":"https://open.gtimg.cn/open/app_icon/00/95/17/76/100951776_100_m.png?t=1637238992","preview":"pubminishare-30161.picsz.qpic.cn/2f8972a2-dbff-4d9e-9465-3691dcca1d52","qqdocurl":"https://b23.tv/ZleAvi3?share_medium=android&share_source=qq&bbid=XY41FED4353148E481B80C27239F61EEE0E8B&ts=1637323268506","scene":1036,"shareTemplateData":{},"shareTemplateId":"8C8E89B49BE609866298ADDFF2DBABA4","showLittleTail":"","title":"哔哩哔哩","url":"m.q.qq.com/a/s/17b25dee41fca9888a5b509047dcd848"}},"needShareCallBack":false,"prompt":"[QQ小程序]哔哩哔哩","ver":"1.0.0.19","view":"view_8C8E89B49BE609866298ADDFF2DBABA4"}][0m
+ChatHandler.handleMessage
+[0m2021-11-19 20:11:46 V/Bot 879112070: [ventre测试群(867206822)] ventre(3279994851) -> [mirai:at:879112070] [0m
+[0m2021-11-19 20:11:50 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 20:11:50 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 20:11:50 V/Bot 879112070: Group(867206822) <- [mirai:at:3279994851] 未获取到相关信息[0m
+ChatHandler.handleMessage
+[0m2021-11-19 20:14:31 V/Bot 879112070: [ventre测试群(867206822)] ventre(3279994851) -> [mirai:at:879112070] 来点饼干[0m
+[0m2021-11-19 20:14:35 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 20:14:36 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 20:14:38 V/Bot 879112070: Group(867206822) <- [mirai:at:3279994851] 笑容很电很可爱啊啊，x)[0m
+ChatHandler.handleMessage
+[0m2021-11-19 20:15:38 V/Bot 879112070: [ventre测试群(867206822)] ventre(3279994851) -> [mirai:at:879112070] 咕咕咕咕[0m
+[0m2021-11-19 20:15:42 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 20:15:42 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 20:15:45 V/Bot 879112070: Group(867206822) <- [mirai:at:3279994851] 饿了么[0m
+ChatHandler.handleMessage
+[0m2021-11-19 20:34:29 V/Bot 879112070: [ventre测试群(867206822)] ventre(3279994851) -> [mirai:at:879112070] [0m
+[0m2021-11-19 20:34:34 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 20:34:34 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 20:34:37 V/Bot 879112070: Group(867206822) <- [mirai:at:3279994851] 未获取到相关信息[0m
+ChatHandler.handleMessage
+[0m2021-11-19 20:38:16 V/Bot 879112070: 安克雷奇(3279994851) -> 宝压[0m
+[0m2021-11-19 20:38:21 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-19 20:38:21 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-19 20:38:21 V/Bot 879112070: Friend(3279994851) <- [mirai:at:3279994851] 你不觉得这个话题没什么意思么[0m
+Exit code: 143
+*** End of transmission ***
