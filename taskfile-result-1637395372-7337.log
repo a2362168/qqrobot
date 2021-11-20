@@ -1,0 +1,807 @@
+**************************************************************
+KiwiVM Task File, executed: Sat, 20 Nov 2021 03:02:52 -0500
+**************************************************************
+# cd /home/VentreBot-shadow-1.0-SNAPSHOT/bin && ./VentreBot
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+[0m2021-11-20 16:02:57 V/Net 879112070: Loading server list from cache.[0m
+[92m2021-11-20 16:02:57 I/Net 879112070: Server list: 183.47.98.90:80, 220.194.118.236:14000, 211.136.109.25:443, 203.205.255.221:8080, msfwifi.3g.qq.com:8080, 169.47.230.125:10001, 49.51.39.163:10001.[0m
+[92m2021-11-20 16:02:58 I/Bot 879112070: Loaded account secrets from local cache.[0m
+[92m2021-11-20 16:02:58 I/Net 879112070: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[92m2021-11-20 16:03:01 I/Net 879112070: Successfully fetched ecdh public key from server.[0m
+[0m2021-11-20 16:03:01 V/Net 879112070: Send: wtlogin.exchange_emp[0m
+[92m2021-11-20 16:03:02 I/Bot 879112070: Saved account secrets to local cache for fast login.[0m
+[0m2021-11-20 16:03:02 V/Net 879112070: Recv: wtlogin.exchange_emp[0m
+[0m2021-11-20 16:03:02 V/Net 879112070: Send: StatSvc.register(online)[0m
+[0m2021-11-20 16:03:02 V/Net 879112070: Recv: MessageSvc.PushForceOffline[0m
+[91m2021-11-20 16:03:02 W/Net 879112070: net.mamoe.mirai.internal.network.impl.netty.ForceOfflineException: 你的帐号于16:01在另一台Android手机登录了QQ。如非本人操作，则密码可能已泄露，建议前往http://aq.qq.com/修改密码或紧急冻结帐号。
+net.mamoe.mirai.internal.network.impl.netty.ForceOfflineException: 你的帐号于16:01在另一台Android手机登录了QQ。如非本人操作，则密码可能已泄露，建议前往http://aq.qq.com/修改密码或紧急冻结帐号。
+	at net.mamoe.mirai.internal.network.protocol.packet.chat.receive.MessageSvcPushForceOffline.handle(MessageSvc.PushForceOffline.kt:35)
+	at net.mamoe.mirai.internal.network.protocol.packet.chat.receive.MessageSvcPushForceOffline.handle(MessageSvc.PushForceOffline.kt:25)
+	at net.mamoe.mirai.internal.network.components.CallPacketFactoryPacketHandler.handlePacket(PacketHandler.kt:110)
+	at net.mamoe.mirai.internal.network.components.PacketHandlerChain.handlePacket(PacketHandler.kt:42)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invokeSuspend(NetworkHandlerSupport.kt:84)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invoke(NetworkHandlerSupport.kt)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport$collectReceived$3.invoke(NetworkHandlerSupport.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startCoroutineUndispatched(Undispatched.kt:55)
+	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:112)
+	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:126)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:56)
+	at kotlinx.coroutines.BuildersKt.launch(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(Builders.common.kt:47)
+	at kotlinx.coroutines.BuildersKt.launch$default(Unknown Source)
+	at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.collectReceived$mirai_core(NetworkHandlerSupport.kt:82)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler$PacketDecodePipeline$send$1.invokeSuspend(NettyNetworkHandler.kt:178)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:497)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	Suppressed: StateSwitchingException(old=StateConnecting, new=StateClosed, cause=net.mamoe.mirai.internal.network.impl.netty.ForceOfflineException: 你的帐号于16:01在另一台Android手机登录了QQ。如非本人操作，则密码可能已泄露，建议前往http://aq.qq.com/修改密码或紧急冻结帐号。)
+		at net.mamoe.mirai.internal.network.handler.NetworkHandlerSupport.setStateImpl$mirai_core(NetworkHandlerSupport.kt:261)
+		at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.close(NettyNetworkHandler.kt:409)
+		at net.mamoe.mirai.internal.network.handler.selector.SelectorNetworkHandler.close(SelectorNetworkHandler.kt:79)
+		... 25 more
+	Caused by: [CIRCULAR REFERENCE: net.mamoe.mirai.internal.network.impl.netty.ForceOfflineException: 你的帐号于16:01在另一台Android手机登录了QQ。如非本人操作，则密码可能已泄露，建议前往http://aq.qq.com/修改密码或紧急冻结帐号。]
+[0m
+[0m2021-11-20 16:03:03 V/Net 879112070: Loading server list from cache.[0m
+[92m2021-11-20 16:03:03 I/Net 879112070: Server list: 183.47.98.90:80, 220.194.118.236:14000, 211.136.109.25:443, 203.205.255.221:8080, msfwifi.3g.qq.com:8080, 169.47.230.125:10001, 49.51.39.163:10001.[0m
+[92m2021-11-20 16:03:03 I/Net 879112070: ECDH key is invalid, start to fetch ecdh public key from server.[0m
+[92m2021-11-20 16:03:03 I/Net 879112070: Successfully fetched ecdh public key from server.[0m
+[0m2021-11-20 16:03:03 V/Net 879112070: Send: wtlogin.login[0m
+[0m2021-11-20 16:03:03 V/Net 879112070: Recv: wtlogin.login[0m
+[0m2021-11-20 16:03:03 V/Net 879112070: Send: wtlogin.login[0m
+[0m2021-11-20 16:03:03 V/Net 879112070: Recv: wtlogin.login[0m
+[92m2021-11-20 16:03:03 I/Bot 879112070: Login successful[0m
+[92m2021-11-20 16:03:03 I/Bot 879112070: Saved account secrets to local cache for fast login.[0m
+[0m2021-11-20 16:03:03 V/Net 879112070: Send: StatSvc.register(online)[0m
+[92m2021-11-20 16:03:04 I/Net 879112070: Server time updated, serverTime: 1637395384, diff: 0ms=0.0s[0m
+[0m2021-11-20 16:03:04 V/Net 879112070: Recv: StatSvc.register[0m
+[92m2021-11-20 16:03:04 I/Bot 879112070: Login successful.[0m
+[0m2021-11-20 16:03:04 V/Net 879112070: Loading BdhSession from cache file[0m
+[92m2021-11-20 16:03:04 I/Net 879112070: Start loading stranger list...[0m
+[92m2021-11-20 16:03:04 I/Net 879112070: Syncing friend message history...[0m
+[0m2021-11-20 16:03:04 V/Net 879112070: Send: OidbSvc.0x5d2_0(OidbSvc.0x5d2_0)[0m
+[92m2021-11-20 16:03:04 I/Net 879112070: Start loading friend list...[0m
+[0m2021-11-20 16:03:04 V/Net 879112070: Send: StatSvc.GetDevLoginInfo(StatSvc.GetDevLoginInfo)[0m
+[0m2021-11-20 16:03:04 V/Net 879112070: Send: OidbSvc.0x496(OidbSvc.0x496)[0m
+[0m2021-11-20 16:03:04 V/Net 879112070: Send: friendlist.getFriendGroupList(friendlist.getFriendGroupList)[0m
+[0m2021-11-20 16:03:04 V/Net 879112070: Recv: OidbSvc.0x496[0m
+[92m2021-11-20 16:03:04 I/Net 879112070: Start loading group list...[0m
+[0m2021-11-20 16:03:04 V/Net 879112070: Send: friendlist.GetTroopListReqV2(friendlist.GetTroopListReqV2)[0m
+[0m2021-11-20 16:03:04 V/Net 879112070: Recv: OidbSvc.0x5d2_0[0m
+[0m2021-11-20 16:03:04 V/Net 879112070: Recv: StatSvc.GetDevLoginInfo[0m
+[92m2021-11-20 16:03:04 I/Net 879112070: No OtherClient online.[0m
+[92m2021-11-20 16:03:04 I/Net 879112070: Successfully loaded stranger list: 1 in total[0m
+[92m2021-11-20 16:03:04 I/Net 879112070: Syncing friend message history: Success.[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Recv: friendlist.getFriendGroupList[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Loading friend list: 59/59[0m
+[92m2021-11-20 16:03:05 I/Net 879112070: Successfully loaded friend list: 59 in total[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Recv: friendlist.GetTroopListReqV2[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Send: friendlist.GetTroopMemberListReq(friendlist.GetTroopMemberListReq)[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Recv: friendlist.GetTroopMemberListReq[0m
+[0m2021-11-20 16:03:05 V/Net 879112070: Recv: friendlist.GetTroopMemberListReq[0m
+[92m2021-11-20 16:03:05 I/Net 879112070: Successfully loaded group list: 12 in total.[0m
+[0m2021-11-20 16:03:05 V/Bot 879112070: Event: BotOnlineEvent(bot=Bot(879112070))[0m
+[92m2021-11-20 16:03:05 I/Bot 879112070: Bot login successful.[0m
+[92m2021-11-20 16:03:05 I/Net 879112070: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2021-11-20 16:03:05 I/Net 879112070: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2021-11-20 16:03:07 I/Net 879112070: Server list: 170.106.72.156:10001, 203.205.255.218:8080, 169.47.230.125:10001, 220.194.118.236:14000, 14.22.9.53:80, msfwifi.3g.qq.com:8080, 117.144.228.48:443.[0m
+[0m2021-11-20 16:03:07 V/Net 879112070: Saving bdh session to cache[0m
+[0m2021-11-20 16:03:07 V/Net 879112070: Saving server list to cache[0m
+[0m2021-11-20 16:03:07 V/Net 879112070: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2021-11-20 16:03:07 V/Net 879112070: Recv: ConfigPushSvc.PushReq[0m
+[0m2021-11-20 16:03:07 V/Net 879112070: Saving bdh session to cache[0m
+[0m2021-11-20 16:03:07 V/Net 879112070: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2021-11-20 16:03:07 V/Net 879112070: Recv: ConfigPushSvc.PushReq[0m
+[0m2021-11-20 16:03:12 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-20 16:03:12 V/Bot 879112070: [ventre测试群(867206822)] ventre(3279994851) -> [mirai:at:879112070][0m
+[0m2021-11-20 16:03:12 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-20 16:03:13 V/Bot 879112070: Group(867206822) <- 欢迎使用涩图机器人，基本使用方法：\n@Ventre 关键字  目前已有的关键字：\n1. 涩图\n2. 色图\n3. 聊天\n如果要查看具体功能，请输入 @Ventre 关键字 help\n例子  @Ventre 涩图 help[0m
+[0m2021-11-20 16:19:49 V/Bot 879112070: Event: BotOfflineEvent.Dropped(bot=Bot(879112070), cause=NettyChannelException(message=null, cause=null), reconnect=true)[0m
+[91m2021-11-20 16:19:49 W/Bot 879112070: Connection lost, reconnecting... (NettyChannelException(message=null, cause=null))[0m
+[91m2021-11-20 16:19:49 W/Net 879112070: NettyChannelException(message=null, cause=null)
+NettyChannelException(message=null, cause=null)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.createConnection$lambda-3(NettyNetworkHandler.kt:162)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:604)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$CloseFuture.setClosed(AbstractChannel.java:1163)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.doClose0(AbstractChannel.java:761)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:737)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:608)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.closeOnRead(AbstractNioByteChannel.java:105)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:174)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[0m
+[0m2021-11-20 16:19:49 V/Net 879112070: Loading server list from cache.[0m
+[92m2021-11-20 16:19:49 I/Net 879112070: Server list: 170.106.72.156:10001, 203.205.255.218:8080, 169.47.230.125:10001, 220.194.118.236:14000, 14.22.9.53:80, msfwifi.3g.qq.com:8080, 117.144.228.48:443.[0m
+[92m2021-11-20 16:19:49 I/Net 879112070: ECDH key is valid.[0m
+[0m2021-11-20 16:19:49 V/Net 879112070: Send: wtlogin.exchange_emp[0m
+[0m2021-11-20 16:19:49 V/Net 879112070: Recv: wtlogin.exchange_emp[0m
+[92m2021-11-20 16:19:49 I/Bot 879112070: Saved account secrets to local cache for fast login.[0m
+[0m2021-11-20 16:19:49 V/Net 879112070: Send: StatSvc.register(online)[0m
+[92m2021-11-20 16:19:50 I/Net 879112070: Server time updated, serverTime: 1637396389, diff: -1ms=-0.001s[0m
+[0m2021-11-20 16:19:50 V/Net 879112070: Recv: StatSvc.register[0m
+[92m2021-11-20 16:19:50 I/Bot 879112070: Login successful.[0m
+[0m2021-11-20 16:19:50 V/Bot 879112070: Event: BotOnlineEvent(bot=Bot(879112070))[0m
+[0m2021-11-20 16:19:50 V/Bot 879112070: Event: BotReloginEvent(bot=Bot(879112070), cause=null)[0m
+[92m2021-11-20 16:19:50 I/Net 879112070: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2021-11-20 16:19:50 I/Net 879112070: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2021-11-20 16:19:50 I/Bot 879112070: Reconnected successfully in 1.018s.[0m
+[92m2021-11-20 16:19:53 I/Net 879112070: Server list: 183.47.98.25:80, msfwifi.3g.qq.com:8080, 170.106.84.10:10001, 169.47.230.125:10001, 123.125.0.210:14000, 36.155.208.73:443, 203.205.255.220:8080.[0m
+[0m2021-11-20 16:19:53 V/Net 879112070: Saving bdh session to cache[0m
+[0m2021-11-20 16:19:53 V/Net 879112070: Saving server list to cache[0m
+[0m2021-11-20 16:19:53 V/Net 879112070: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2021-11-20 16:19:53 V/Net 879112070: Recv: ConfigPushSvc.PushReq[0m
+[0m2021-11-20 16:19:53 V/Net 879112070: Saving bdh session to cache[0m
+[0m2021-11-20 16:19:53 V/Net 879112070: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2021-11-20 16:19:53 V/Net 879112070: Recv: ConfigPushSvc.PushReq[0m
+[0m2021-11-20 16:36:35 V/Bot 879112070: Event: BotOfflineEvent.Dropped(bot=Bot(879112070), cause=NettyChannelException(message=null, cause=null), reconnect=true)[0m
+[91m2021-11-20 16:36:35 W/Bot 879112070: Connection lost, reconnecting... (NettyChannelException(message=null, cause=null))[0m
+[91m2021-11-20 16:36:35 W/Net 879112070: NettyChannelException(message=null, cause=null)
+NettyChannelException(message=null, cause=null)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.createConnection$lambda-3(NettyNetworkHandler.kt:162)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:604)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$CloseFuture.setClosed(AbstractChannel.java:1163)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.doClose0(AbstractChannel.java:761)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:737)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:608)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.closeOnRead(AbstractNioByteChannel.java:105)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:174)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[0m
+[0m2021-11-20 16:36:35 V/Net 879112070: Loading server list from cache.[0m
+[92m2021-11-20 16:36:35 I/Net 879112070: Server list: 183.47.98.25:80, msfwifi.3g.qq.com:8080, 170.106.84.10:10001, 169.47.230.125:10001, 123.125.0.210:14000, 36.155.208.73:443, 203.205.255.220:8080.[0m
+[92m2021-11-20 16:36:35 I/Net 879112070: ECDH key is valid.[0m
+[0m2021-11-20 16:36:35 V/Net 879112070: Send: wtlogin.exchange_emp[0m
+[0m2021-11-20 16:36:35 V/Net 879112070: Recv: wtlogin.exchange_emp[0m
+[92m2021-11-20 16:36:35 I/Bot 879112070: Saved account secrets to local cache for fast login.[0m
+[0m2021-11-20 16:36:35 V/Net 879112070: Send: StatSvc.register(online)[0m
+[92m2021-11-20 16:36:35 I/Net 879112070: Server time updated, serverTime: 1637397395, diff: 0ms=0.0s[0m
+[0m2021-11-20 16:36:35 V/Net 879112070: Recv: StatSvc.register[0m
+[92m2021-11-20 16:36:35 I/Bot 879112070: Login successful.[0m
+[0m2021-11-20 16:36:35 V/Bot 879112070: Event: BotOnlineEvent(bot=Bot(879112070))[0m
+[0m2021-11-20 16:36:35 V/Bot 879112070: Event: BotReloginEvent(bot=Bot(879112070), cause=null)[0m
+[92m2021-11-20 16:36:35 I/Net 879112070: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2021-11-20 16:36:35 I/Net 879112070: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2021-11-20 16:36:35 I/Bot 879112070: Reconnected successfully in 0.872s.[0m
+[92m2021-11-20 16:36:38 I/Net 879112070: Server list: 220.194.118.230:14000, 203.205.255.220:8080, 49.51.39.163:10001, 120.204.207.144:443, 169.47.230.125:10001, msfwifi.3g.qq.com:8080, 183.47.98.105:80.[0m
+[0m2021-11-20 16:36:38 V/Net 879112070: Saving bdh session to cache[0m
+[0m2021-11-20 16:36:38 V/Net 879112070: Saving server list to cache[0m
+[0m2021-11-20 16:36:38 V/Net 879112070: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2021-11-20 16:36:38 V/Net 879112070: Recv: ConfigPushSvc.PushReq[0m
+[0m2021-11-20 16:36:38 V/Net 879112070: Saving bdh session to cache[0m
+[0m2021-11-20 16:36:38 V/Net 879112070: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2021-11-20 16:36:38 V/Net 879112070: Recv: ConfigPushSvc.PushReq[0m
+[0m2021-11-20 16:53:20 V/Bot 879112070: Event: BotOfflineEvent.Dropped(bot=Bot(879112070), cause=NettyChannelException(message=null, cause=null), reconnect=true)[0m
+[91m2021-11-20 16:53:20 W/Bot 879112070: Connection lost, reconnecting... (NettyChannelException(message=null, cause=null))[0m
+[91m2021-11-20 16:53:20 W/Net 879112070: NettyChannelException(message=null, cause=null)
+NettyChannelException(message=null, cause=null)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.createConnection$lambda-3(NettyNetworkHandler.kt:162)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:604)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$CloseFuture.setClosed(AbstractChannel.java:1163)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.doClose0(AbstractChannel.java:761)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:737)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:608)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.closeOnRead(AbstractNioByteChannel.java:105)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:174)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[0m
+[0m2021-11-20 16:53:20 V/Net 879112070: Loading server list from cache.[0m
+[92m2021-11-20 16:53:20 I/Net 879112070: Server list: 220.194.118.230:14000, 203.205.255.220:8080, 49.51.39.163:10001, 120.204.207.144:443, 169.47.230.125:10001, msfwifi.3g.qq.com:8080, 183.47.98.105:80.[0m
+[92m2021-11-20 16:53:20 I/Net 879112070: ECDH key is valid.[0m
+[0m2021-11-20 16:53:20 V/Net 879112070: Send: wtlogin.exchange_emp[0m
+[0m2021-11-20 16:53:20 V/Net 879112070: Recv: wtlogin.exchange_emp[0m
+[92m2021-11-20 16:53:20 I/Bot 879112070: Saved account secrets to local cache for fast login.[0m
+[0m2021-11-20 16:53:20 V/Net 879112070: Send: StatSvc.register(online)[0m
+[92m2021-11-20 16:53:20 I/Net 879112070: Server time updated, serverTime: 1637398400, diff: 0ms=0.0s[0m
+[0m2021-11-20 16:53:20 V/Net 879112070: Recv: StatSvc.register[0m
+[92m2021-11-20 16:53:20 I/Bot 879112070: Login successful.[0m
+[0m2021-11-20 16:53:20 V/Bot 879112070: Event: BotOnlineEvent(bot=Bot(879112070))[0m
+[0m2021-11-20 16:53:20 V/Bot 879112070: Event: BotReloginEvent(bot=Bot(879112070), cause=null)[0m
+[92m2021-11-20 16:53:20 I/Net 879112070: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2021-11-20 16:53:20 I/Net 879112070: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2021-11-20 16:53:20 I/Bot 879112070: Reconnected successfully in 0.722s.[0m
+[92m2021-11-20 16:53:23 I/Net 879112070: Server list: 120.204.207.31:443, 49.51.39.163:10001, 169.47.230.125:10001, 203.205.255.221:8080, msfwifi.3g.qq.com:8080, 113.96.13.208:80, 220.194.118.224:14000.[0m
+[0m2021-11-20 16:53:23 V/Net 879112070: Saving bdh session to cache[0m
+[0m2021-11-20 16:53:23 V/Net 879112070: Saving server list to cache[0m
+[0m2021-11-20 16:53:23 V/Net 879112070: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2021-11-20 16:53:23 V/Net 879112070: Recv: ConfigPushSvc.PushReq[0m
+[0m2021-11-20 16:53:23 V/Net 879112070: Saving bdh session to cache[0m
+[0m2021-11-20 16:53:23 V/Net 879112070: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2021-11-20 16:53:23 V/Net 879112070: Recv: ConfigPushSvc.PushReq[0m
+[0m2021-11-20 17:10:06 V/Bot 879112070: Event: BotOfflineEvent.Dropped(bot=Bot(879112070), cause=NettyChannelException(message=null, cause=null), reconnect=true)[0m
+[91m2021-11-20 17:10:06 W/Bot 879112070: Connection lost, reconnecting... (NettyChannelException(message=null, cause=null))[0m
+[91m2021-11-20 17:10:06 W/Net 879112070: NettyChannelException(message=null, cause=null)
+NettyChannelException(message=null, cause=null)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.createConnection$lambda-3(NettyNetworkHandler.kt:162)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:604)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$CloseFuture.setClosed(AbstractChannel.java:1163)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.doClose0(AbstractChannel.java:761)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:737)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:608)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.closeOnRead(AbstractNioByteChannel.java:105)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:174)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[0m
+[0m2021-11-20 17:10:06 V/Net 879112070: Loading server list from cache.[0m
+[92m2021-11-20 17:10:06 I/Net 879112070: Server list: 120.204.207.31:443, 49.51.39.163:10001, 169.47.230.125:10001, 203.205.255.221:8080, msfwifi.3g.qq.com:8080, 113.96.13.208:80, 220.194.118.224:14000.[0m
+[92m2021-11-20 17:10:06 I/Net 879112070: ECDH key is valid.[0m
+[0m2021-11-20 17:10:06 V/Net 879112070: Send: wtlogin.exchange_emp[0m
+[0m2021-11-20 17:10:06 V/Net 879112070: Recv: wtlogin.exchange_emp[0m
+[92m2021-11-20 17:10:06 I/Bot 879112070: Saved account secrets to local cache for fast login.[0m
+[0m2021-11-20 17:10:06 V/Net 879112070: Send: StatSvc.register(online)[0m
+[92m2021-11-20 17:10:06 I/Net 879112070: Server time updated, serverTime: 1637399406, diff: 0ms=0.0s[0m
+[0m2021-11-20 17:10:06 V/Net 879112070: Recv: StatSvc.register[0m
+[92m2021-11-20 17:10:06 I/Bot 879112070: Login successful.[0m
+[0m2021-11-20 17:10:06 V/Bot 879112070: Event: BotOnlineEvent(bot=Bot(879112070))[0m
+[0m2021-11-20 17:10:06 V/Bot 879112070: Event: BotReloginEvent(bot=Bot(879112070), cause=null)[0m
+[92m2021-11-20 17:10:06 I/Net 879112070: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2021-11-20 17:10:06 I/Net 879112070: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2021-11-20 17:10:06 I/Bot 879112070: Reconnected successfully in 0.755s.[0m
+[0m2021-11-20 17:10:09 V/Net 879112070: Saving bdh session to cache[0m
+[0m2021-11-20 17:10:09 V/Net 879112070: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2021-11-20 17:10:09 V/Net 879112070: Recv: ConfigPushSvc.PushReq[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:19:48 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> 还有我个人觉得14-3 道中，信浓比天鹰强[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:20:07 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> boss不伤信浓也随便打[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:20:38 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> 14-4好打[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:20:44 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> 比14-3好打多了[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:21:36 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> 我感觉差不多的，14-4 boss比较难，因为我信浓走的道中[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:22:22 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> 14-4道中简单[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:23:32 V/Bot 879112070: [碧蓝晒鱼场(556208166)] PHZHANG(2414605876) -> 14-4比17-3更好sl一点个人感觉[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:24:24 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> 我打的是或感觉大差不差，14-3 我boss队帮着打了1队，14-4 道中要打完。 打到最后也就剩2个丝血船了。[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:24:27 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> 差点没了[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:25:13 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> 应该是我没有英仙座的原因，她太能奶了[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:25:22 V/Bot 879112070: [碧蓝晒鱼场(556208166)] PHZHANG(2414605876) -> 想满星就是会差点没[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:25:28 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> 17-3是几把[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:25:30 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> [mirai:image:{FF9B5F90-EC9F-D563-55E5-6CD1E54BCBF8}.gif][0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:26:02 V/Bot 879112070: [碧蓝晒鱼场(556208166)] PHZHANG(2414605876) -> 17-3？[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:26:27 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> 你说的啊[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:26:29 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> 雪风终究还是守护住了大家，好耶[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:26:34 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> 外服都17章了吗[0m
+[0m2021-11-20 17:26:52 V/Bot 879112070: Event: BotOfflineEvent.Dropped(bot=Bot(879112070), cause=NettyChannelException(message=null, cause=null), reconnect=true)[0m
+[91m2021-11-20 17:26:52 W/Bot 879112070: Connection lost, reconnecting... (NettyChannelException(message=null, cause=null))[0m
+[91m2021-11-20 17:26:52 W/Net 879112070: NettyChannelException(message=null, cause=null)
+NettyChannelException(message=null, cause=null)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.createConnection$lambda-3(NettyNetworkHandler.kt:162)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:604)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$CloseFuture.setClosed(AbstractChannel.java:1163)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.doClose0(AbstractChannel.java:761)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:737)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:608)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.closeOnRead(AbstractNioByteChannel.java:105)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:174)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[0m
+[0m2021-11-20 17:26:52 V/Net 879112070: Loading server list from cache.[0m
+[92m2021-11-20 17:26:52 I/Net 879112070: Server list: 120.204.207.31:443, 49.51.39.163:10001, 169.47.230.125:10001, 203.205.255.221:8080, msfwifi.3g.qq.com:8080, 113.96.13.208:80, 220.194.118.224:14000.[0m
+[92m2021-11-20 17:26:52 I/Net 879112070: ECDH key is valid.[0m
+[0m2021-11-20 17:26:52 V/Net 879112070: Send: wtlogin.exchange_emp[0m
+[0m2021-11-20 17:26:52 V/Net 879112070: Recv: wtlogin.exchange_emp[0m
+[92m2021-11-20 17:26:52 I/Bot 879112070: Saved account secrets to local cache for fast login.[0m
+[0m2021-11-20 17:26:52 V/Net 879112070: Send: StatSvc.register(online)[0m
+[92m2021-11-20 17:26:52 I/Net 879112070: Server time updated, serverTime: 1637400412, diff: 0ms=0.0s[0m
+[0m2021-11-20 17:26:52 V/Net 879112070: Recv: StatSvc.register[0m
+[92m2021-11-20 17:26:52 I/Bot 879112070: Login successful.[0m
+[0m2021-11-20 17:26:52 V/Bot 879112070: Event: BotOnlineEvent(bot=Bot(879112070))[0m
+[0m2021-11-20 17:26:52 V/Bot 879112070: Event: BotReloginEvent(bot=Bot(879112070), cause=null)[0m
+[92m2021-11-20 17:26:52 I/Net 879112070: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2021-11-20 17:26:52 I/Net 879112070: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2021-11-20 17:26:52 I/Bot 879112070: Reconnected successfully in 0.774s.[0m
+[0m2021-11-20 17:26:55 V/Net 879112070: Saving bdh session to cache[0m
+[0m2021-11-20 17:26:55 V/Net 879112070: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2021-11-20 17:26:55 V/Net 879112070: Recv: ConfigPushSvc.PushReq[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:27:45 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> 同样的阵容[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:27:49 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> 别人可以自律[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:27:54 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> 我点自律就爆炸[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:27:56 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> 咋回事[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:28:08 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> 红海自律？[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:28:23 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> 我觉得红海不太可能自律。，[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:28:35 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> b站视频[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:30:52 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 心野游魂(2415633409) -> 人家是把自律过了的给上传了吧[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:31:08 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> [mirai:image:{FF9B5F90-EC9F-D563-55E5-6CD1E54BCBF8}.gif][0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:31:12 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> [mirai:image:{F4BEA5C0-40B6-DE5D-F8DE-CB4DBFE17030}.jpg][0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:31:17 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> 找大凤提款去[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:31:24 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 心野游魂(2415633409) -> 我看有个大叔直播，只自律，经常会重开[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:31:29 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> 需要强化强化了[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:31:46 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> 你这125也是多。。[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:32:30 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> [mirai:image:{A5B0457C-EE6B-BA3B-91B6-BD814E5C9C2D}.jpg][0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:32:35 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> 给错了[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:32:47 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> 我应该先升几个前排[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:33:00 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> 开始活动给的多[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:33:05 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> 我没思考[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:33:09 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> 后来一看每日[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:33:30 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> 我前排就升了3驱逐，快乐。[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:33:40 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> 按月走[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:40:15 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> [mirai:image:{CE1D7CED-7163-013A-BC1A-2308919873AF}.jpg][0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:40:21 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> 好感没满[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:40:35 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> 你这还不去活动刷好感[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:40:43 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> 趁着锁油[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:40:53 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> 活动打满了[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:41:08 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> 刷好感啊[0m
+[0m2021-11-20 17:43:38 V/Bot 879112070: Event: BotOfflineEvent.Dropped(bot=Bot(879112070), cause=NettyChannelException(message=null, cause=null), reconnect=true)[0m
+[91m2021-11-20 17:43:38 W/Bot 879112070: Connection lost, reconnecting... (NettyChannelException(message=null, cause=null))[0m
+[91m2021-11-20 17:43:38 W/Net 879112070: NettyChannelException(message=null, cause=null)
+NettyChannelException(message=null, cause=null)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.createConnection$lambda-3(NettyNetworkHandler.kt:162)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:604)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$CloseFuture.setClosed(AbstractChannel.java:1163)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.doClose0(AbstractChannel.java:761)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:737)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:608)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.closeOnRead(AbstractNioByteChannel.java:105)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:174)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[0m
+[0m2021-11-20 17:43:38 V/Net 879112070: Loading server list from cache.[0m
+[92m2021-11-20 17:43:38 I/Net 879112070: Server list: 120.204.207.31:443, 49.51.39.163:10001, 169.47.230.125:10001, 203.205.255.221:8080, msfwifi.3g.qq.com:8080, 113.96.13.208:80, 220.194.118.224:14000.[0m
+[92m2021-11-20 17:43:38 I/Net 879112070: ECDH key is valid.[0m
+[0m2021-11-20 17:43:38 V/Net 879112070: Send: wtlogin.exchange_emp[0m
+[0m2021-11-20 17:43:38 V/Net 879112070: Recv: wtlogin.exchange_emp[0m
+[92m2021-11-20 17:43:38 I/Bot 879112070: Saved account secrets to local cache for fast login.[0m
+[0m2021-11-20 17:43:38 V/Net 879112070: Send: StatSvc.register(online)[0m
+[92m2021-11-20 17:43:38 I/Net 879112070: Server time updated, serverTime: 1637401418, diff: 0ms=0.0s[0m
+[0m2021-11-20 17:43:38 V/Net 879112070: Recv: StatSvc.register[0m
+[92m2021-11-20 17:43:38 I/Bot 879112070: Login successful.[0m
+[0m2021-11-20 17:43:38 V/Bot 879112070: Event: BotOnlineEvent(bot=Bot(879112070))[0m
+[0m2021-11-20 17:43:38 V/Bot 879112070: Event: BotReloginEvent(bot=Bot(879112070), cause=null)[0m
+[92m2021-11-20 17:43:38 I/Net 879112070: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2021-11-20 17:43:38 I/Net 879112070: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2021-11-20 17:43:38 I/Bot 879112070: Reconnected successfully in 0.553s.[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:43:39 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> 现在改了经验，100~120 纯刷图前排可以刷90好感左右[0m
+[0m2021-11-20 17:43:41 V/Net 879112070: Saving bdh session to cache[0m
+[0m2021-11-20 17:43:41 V/Net 879112070: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2021-11-20 17:43:41 V/Net 879112070: Recv: ConfigPushSvc.PushReq[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:44:00 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> 后排旗舰就只有70左右了[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:44:21 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> 所以要刷200好感大概要从70级开始。。[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:44:50 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 天子星(3279994851) -> 还得秘书提前挂[0m
+RepeatHander.handleMessage
+[0m2021-11-20 17:44:59 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> [mirai:image:{BD790045-78C8-1A5D-98C0-DA29950A0541}.gif][0m
+[0m2021-11-20 18:00:23 V/Bot 879112070: Event: BotOfflineEvent.Dropped(bot=Bot(879112070), cause=NettyChannelException(message=null, cause=null), reconnect=true)[0m
+[91m2021-11-20 18:00:23 W/Bot 879112070: Connection lost, reconnecting... (NettyChannelException(message=null, cause=null))[0m
+[91m2021-11-20 18:00:23 W/Net 879112070: NettyChannelException(message=null, cause=null)
+NettyChannelException(message=null, cause=null)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.createConnection$lambda-3(NettyNetworkHandler.kt:162)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:604)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$CloseFuture.setClosed(AbstractChannel.java:1163)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.doClose0(AbstractChannel.java:761)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:737)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:608)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.closeOnRead(AbstractNioByteChannel.java:105)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:174)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[0m
+[0m2021-11-20 18:00:23 V/Net 879112070: Loading server list from cache.[0m
+[92m2021-11-20 18:00:23 I/Net 879112070: Server list: 120.204.207.31:443, 49.51.39.163:10001, 169.47.230.125:10001, 203.205.255.221:8080, msfwifi.3g.qq.com:8080, 113.96.13.208:80, 220.194.118.224:14000.[0m
+[92m2021-11-20 18:00:23 I/Net 879112070: ECDH key is valid.[0m
+[0m2021-11-20 18:00:23 V/Net 879112070: Send: wtlogin.exchange_emp[0m
+[0m2021-11-20 18:00:23 V/Net 879112070: Recv: wtlogin.exchange_emp[0m
+[92m2021-11-20 18:00:23 I/Bot 879112070: Saved account secrets to local cache for fast login.[0m
+[0m2021-11-20 18:00:23 V/Net 879112070: Send: StatSvc.register(online)[0m
+[92m2021-11-20 18:00:24 I/Net 879112070: Server time updated, serverTime: 1637402423, diff: -1ms=-0.001s[0m
+[0m2021-11-20 18:00:24 V/Net 879112070: Recv: StatSvc.register[0m
+[92m2021-11-20 18:00:24 I/Bot 879112070: Login successful.[0m
+[0m2021-11-20 18:00:24 V/Bot 879112070: Event: BotOnlineEvent(bot=Bot(879112070))[0m
+[0m2021-11-20 18:00:24 V/Bot 879112070: Event: BotReloginEvent(bot=Bot(879112070), cause=null)[0m
+[92m2021-11-20 18:00:24 I/Net 879112070: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2021-11-20 18:00:24 I/Net 879112070: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2021-11-20 18:00:24 I/Bot 879112070: Reconnected successfully in 0.911s.[0m
+[92m2021-11-20 18:00:26 I/Net 879112070: Server list: 119.147.190.155:80, 203.205.255.221:8080, 221.198.69.46:14000, msfwifi.3g.qq.com:8080, 170.106.84.10:10001, 120.204.207.144:443, 169.47.230.125:10001.[0m
+[0m2021-11-20 18:00:26 V/Net 879112070: Saving bdh session to cache[0m
+[0m2021-11-20 18:00:26 V/Net 879112070: Saving server list to cache[0m
+[0m2021-11-20 18:00:26 V/Net 879112070: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2021-11-20 18:00:26 V/Net 879112070: Recv: ConfigPushSvc.PushReq[0m
+[0m2021-11-20 18:00:27 V/Net 879112070: Saving bdh session to cache[0m
+[0m2021-11-20 18:00:27 V/Net 879112070: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2021-11-20 18:00:27 V/Net 879112070: Recv: ConfigPushSvc.PushReq[0m
+[0m2021-11-20 18:17:09 V/Bot 879112070: Event: BotOfflineEvent.Dropped(bot=Bot(879112070), cause=NettyChannelException(message=null, cause=null), reconnect=true)[0m
+[91m2021-11-20 18:17:09 W/Bot 879112070: Connection lost, reconnecting... (NettyChannelException(message=null, cause=null))[0m
+[91m2021-11-20 18:17:09 W/Net 879112070: NettyChannelException(message=null, cause=null)
+NettyChannelException(message=null, cause=null)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.createConnection$lambda-3(NettyNetworkHandler.kt:162)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:604)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$CloseFuture.setClosed(AbstractChannel.java:1163)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.doClose0(AbstractChannel.java:761)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:737)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:608)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.closeOnRead(AbstractNioByteChannel.java:105)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:174)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[0m
+[0m2021-11-20 18:17:09 V/Net 879112070: Loading server list from cache.[0m
+[92m2021-11-20 18:17:09 I/Net 879112070: Server list: 119.147.190.155:80, 203.205.255.221:8080, 221.198.69.46:14000, msfwifi.3g.qq.com:8080, 170.106.84.10:10001, 120.204.207.144:443, 169.47.230.125:10001.[0m
+[92m2021-11-20 18:17:09 I/Net 879112070: ECDH key is valid.[0m
+[0m2021-11-20 18:17:09 V/Net 879112070: Send: wtlogin.exchange_emp[0m
+[0m2021-11-20 18:17:09 V/Net 879112070: Recv: wtlogin.exchange_emp[0m
+[92m2021-11-20 18:17:09 I/Bot 879112070: Saved account secrets to local cache for fast login.[0m
+[0m2021-11-20 18:17:09 V/Net 879112070: Send: StatSvc.register(online)[0m
+[92m2021-11-20 18:17:09 I/Net 879112070: Server time updated, serverTime: 1637403429, diff: 0ms=0.0s[0m
+[0m2021-11-20 18:17:09 V/Net 879112070: Recv: StatSvc.register[0m
+[92m2021-11-20 18:17:09 I/Bot 879112070: Login successful.[0m
+[0m2021-11-20 18:17:09 V/Bot 879112070: Event: BotOnlineEvent(bot=Bot(879112070))[0m
+[0m2021-11-20 18:17:09 V/Bot 879112070: Event: BotReloginEvent(bot=Bot(879112070), cause=null)[0m
+[92m2021-11-20 18:17:09 I/Net 879112070: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2021-11-20 18:17:09 I/Net 879112070: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2021-11-20 18:17:09 I/Bot 879112070: Reconnected successfully in 0.578s.[0m
+[92m2021-11-20 18:17:12 I/Net 879112070: Server list: 169.47.230.125:10001, 203.205.255.221:8080, 60.29.242.161:14000, 183.194.238.246:443, msfwifi.3g.qq.com:8080, 183.47.98.11:80, 170.106.84.90:10001.[0m
+[0m2021-11-20 18:17:12 V/Net 879112070: Saving bdh session to cache[0m
+[0m2021-11-20 18:17:12 V/Net 879112070: Saving server list to cache[0m
+[0m2021-11-20 18:17:12 V/Net 879112070: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2021-11-20 18:17:12 V/Net 879112070: Recv: ConfigPushSvc.PushReq[0m
+[0m2021-11-20 18:17:12 V/Net 879112070: Saving bdh session to cache[0m
+[0m2021-11-20 18:17:12 V/Net 879112070: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2021-11-20 18:17:12 V/Net 879112070: Recv: ConfigPushSvc.PushReq[0m
+[0m2021-11-20 18:33:55 V/Bot 879112070: Event: BotOfflineEvent.Dropped(bot=Bot(879112070), cause=NettyChannelException(message=null, cause=null), reconnect=true)[0m
+[91m2021-11-20 18:33:55 W/Bot 879112070: Connection lost, reconnecting... (NettyChannelException(message=null, cause=null))[0m
+[91m2021-11-20 18:33:55 W/Net 879112070: NettyChannelException(message=null, cause=null)
+NettyChannelException(message=null, cause=null)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.createConnection$lambda-3(NettyNetworkHandler.kt:162)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:604)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$CloseFuture.setClosed(AbstractChannel.java:1163)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.doClose0(AbstractChannel.java:761)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:737)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:608)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.closeOnRead(AbstractNioByteChannel.java:105)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:174)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[0m
+[0m2021-11-20 18:33:55 V/Net 879112070: Loading server list from cache.[0m
+[92m2021-11-20 18:33:55 I/Net 879112070: Server list: 169.47.230.125:10001, 203.205.255.221:8080, 60.29.242.161:14000, 183.194.238.246:443, msfwifi.3g.qq.com:8080, 183.47.98.11:80, 170.106.84.90:10001.[0m
+[92m2021-11-20 18:33:55 I/Net 879112070: ECDH key is valid.[0m
+[0m2021-11-20 18:33:55 V/Net 879112070: Send: wtlogin.exchange_emp[0m
+[0m2021-11-20 18:33:55 V/Net 879112070: Recv: wtlogin.exchange_emp[0m
+[92m2021-11-20 18:33:55 I/Bot 879112070: Saved account secrets to local cache for fast login.[0m
+[0m2021-11-20 18:33:55 V/Net 879112070: Send: StatSvc.register(online)[0m
+[92m2021-11-20 18:33:55 I/Net 879112070: Server time updated, serverTime: 1637404435, diff: 0ms=0.0s[0m
+[0m2021-11-20 18:33:55 V/Net 879112070: Recv: StatSvc.register[0m
+[92m2021-11-20 18:33:55 I/Bot 879112070: Login successful.[0m
+[0m2021-11-20 18:33:55 V/Bot 879112070: Event: BotOnlineEvent(bot=Bot(879112070))[0m
+[0m2021-11-20 18:33:55 V/Bot 879112070: Event: BotReloginEvent(bot=Bot(879112070), cause=null)[0m
+[92m2021-11-20 18:33:55 I/Net 879112070: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2021-11-20 18:33:55 I/Net 879112070: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2021-11-20 18:33:55 I/Bot 879112070: Reconnected successfully in 0.814s.[0m
+[0m2021-11-20 18:33:58 V/Net 879112070: Saving bdh session to cache[0m
+[0m2021-11-20 18:33:58 V/Net 879112070: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2021-11-20 18:33:58 V/Net 879112070: Recv: ConfigPushSvc.PushReq[0m
+RepeatHander.handleMessage
+[0m2021-11-20 18:40:22 V/Bot 879112070: [碧蓝晒鱼场(556208166)] PHZHANG(2414605876) -> 现在刷好感也不难了吧[0m
+RepeatHander.handleMessage
+[0m2021-11-20 18:40:43 V/Bot 879112070: [碧蓝晒鱼场(556208166)] PHZHANG(2414605876) -> 直接12-4就完了反正锁油[0m
+RepeatHander.handleMessage
+[0m2021-11-20 18:41:23 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 心野游魂(2415633409) -> [mirai:image:{59212DD4-CD4D-429C-4184-598ABB8EAFAD}.png][0m
+RepeatHander.handleMessage
+[0m2021-11-20 18:41:28 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 心野游魂(2415633409) -> 联动直播要开始了[0m
+RepeatHander.handleMessage
+[0m2021-11-20 18:41:55 V/Bot 879112070: [碧蓝晒鱼场(556208166)] PHZHANG(2414605876) -> 有啥有用的群里唆一哈[0m
+RepeatHander.handleMessage
+[0m2021-11-20 18:43:04 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 心野游魂(2415633409) -> 还不和往常联动差不多[0m
+RepeatHander.handleMessage
+[0m2021-11-20 18:43:20 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 心野游魂(2415633409) -> 公布角色的时候，我发一下就是了[0m
+RepeatHander.handleMessage
+[0m2021-11-20 18:43:31 V/Bot 879112070: [碧蓝晒鱼场(556208166)] PHZHANG(2414605876) -> 说不定有个机器人家具[0m
+RepeatHander.handleMessage
+[0m2021-11-20 18:45:54 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> 看图又是矮萌[0m
+[0m2021-11-20 18:50:41 V/Bot 879112070: Event: BotOfflineEvent.Dropped(bot=Bot(879112070), cause=NettyChannelException(message=null, cause=null), reconnect=true)[0m
+[91m2021-11-20 18:50:41 W/Bot 879112070: Connection lost, reconnecting... (NettyChannelException(message=null, cause=null))[0m
+[91m2021-11-20 18:50:41 W/Net 879112070: NettyChannelException(message=null, cause=null)
+NettyChannelException(message=null, cause=null)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.createConnection$lambda-3(NettyNetworkHandler.kt:162)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:604)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$CloseFuture.setClosed(AbstractChannel.java:1163)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.doClose0(AbstractChannel.java:761)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:737)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:608)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.closeOnRead(AbstractNioByteChannel.java:105)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:174)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[0m
+[0m2021-11-20 18:50:41 V/Net 879112070: Loading server list from cache.[0m
+[92m2021-11-20 18:50:41 I/Net 879112070: Server list: 169.47.230.125:10001, 203.205.255.221:8080, 60.29.242.161:14000, 183.194.238.246:443, msfwifi.3g.qq.com:8080, 183.47.98.11:80, 170.106.84.90:10001.[0m
+[92m2021-11-20 18:50:41 I/Net 879112070: ECDH key is valid.[0m
+[0m2021-11-20 18:50:41 V/Net 879112070: Send: wtlogin.exchange_emp[0m
+[0m2021-11-20 18:50:41 V/Net 879112070: Recv: wtlogin.exchange_emp[0m
+[92m2021-11-20 18:50:41 I/Bot 879112070: Saved account secrets to local cache for fast login.[0m
+[0m2021-11-20 18:50:41 V/Net 879112070: Send: StatSvc.register(online)[0m
+[92m2021-11-20 18:50:41 I/Net 879112070: Server time updated, serverTime: 1637405441, diff: 0ms=0.0s[0m
+[0m2021-11-20 18:50:41 V/Net 879112070: Recv: StatSvc.register[0m
+[92m2021-11-20 18:50:41 I/Bot 879112070: Login successful.[0m
+[0m2021-11-20 18:50:41 V/Bot 879112070: Event: BotOnlineEvent(bot=Bot(879112070))[0m
+[0m2021-11-20 18:50:41 V/Bot 879112070: Event: BotReloginEvent(bot=Bot(879112070), cause=null)[0m
+[92m2021-11-20 18:50:41 I/Net 879112070: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2021-11-20 18:50:41 I/Net 879112070: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2021-11-20 18:50:41 I/Bot 879112070: Reconnected successfully in 0.757s.[0m
+[0m2021-11-20 18:50:45 V/Net 879112070: Saving bdh session to cache[0m
+[0m2021-11-20 18:50:45 V/Net 879112070: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2021-11-20 18:50:45 V/Net 879112070: Recv: ConfigPushSvc.PushReq[0m
+RepeatHander.handleMessage
+[0m2021-11-20 18:52:10 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 芜湖棉袄人(787111584) -> [mirai:image:{4BF79B9B-E880-CBC6-0F60-15510FFEE72A}.png][0m
+RepeatHander.handleMessage
+[0m2021-11-20 18:57:55 V/Bot 879112070: [提瓦特游览指南(795087019)] 流星之绊#108597977(535384721) -> 很好，有了胡桃12-3能满星了[0m
+RepeatHander.handleMessage
+[0m2021-11-20 18:58:00 V/Bot 879112070: [提瓦特游览指南(795087019)] 流星之绊#108597977(535384721) -> [mirai:image:{20B8B2FB-BC53-2611-BE73-B223A5C44F79}.gif][0m
+RepeatHander.handleMessage
+[0m2021-11-20 18:59:18 V/Bot 879112070: [提瓦特游览指南(795087019)] 苏打粉#100798202(1196061685) -> 群里就我一个打不过12-3的了[0m
+[0m2021-11-20 19:07:27 V/Bot 879112070: Event: BotOfflineEvent.Dropped(bot=Bot(879112070), cause=NettyChannelException(message=null, cause=null), reconnect=true)[0m
+[91m2021-11-20 19:07:27 W/Bot 879112070: Connection lost, reconnecting... (NettyChannelException(message=null, cause=null))[0m
+[91m2021-11-20 19:07:27 W/Net 879112070: NettyChannelException(message=null, cause=null)
+NettyChannelException(message=null, cause=null)
+	at net.mamoe.mirai.internal.network.impl.netty.NettyNetworkHandler.createConnection$lambda-3(NettyNetworkHandler.kt:162)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:577)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:551)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:490)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:615)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:604)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:104)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$CloseFuture.setClosed(AbstractChannel.java:1163)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.doClose0(AbstractChannel.java:761)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:737)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:608)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.closeOnRead(AbstractNioByteChannel.java:105)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:174)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[0m
+[0m2021-11-20 19:07:27 V/Net 879112070: Loading server list from cache.[0m
+[92m2021-11-20 19:07:27 I/Net 879112070: Server list: 169.47.230.125:10001, 203.205.255.221:8080, 60.29.242.161:14000, 183.194.238.246:443, msfwifi.3g.qq.com:8080, 183.47.98.11:80, 170.106.84.90:10001.[0m
+[92m2021-11-20 19:07:27 I/Net 879112070: ECDH key is valid.[0m
+[0m2021-11-20 19:07:27 V/Net 879112070: Send: wtlogin.exchange_emp[0m
+[0m2021-11-20 19:07:27 V/Net 879112070: Recv: wtlogin.exchange_emp[0m
+[92m2021-11-20 19:07:27 I/Bot 879112070: Saved account secrets to local cache for fast login.[0m
+[0m2021-11-20 19:07:27 V/Net 879112070: Send: StatSvc.register(online)[0m
+[92m2021-11-20 19:07:27 I/Net 879112070: Server time updated, serverTime: 1637406447, diff: 0ms=0.0s[0m
+[0m2021-11-20 19:07:27 V/Net 879112070: Recv: StatSvc.register[0m
+[92m2021-11-20 19:07:27 I/Bot 879112070: Login successful.[0m
+[0m2021-11-20 19:07:27 V/Bot 879112070: Event: BotOnlineEvent(bot=Bot(879112070))[0m
+[0m2021-11-20 19:07:27 V/Bot 879112070: Event: BotReloginEvent(bot=Bot(879112070), cause=null)[0m
+[92m2021-11-20 19:07:27 I/Net 879112070: Scheduled key refresh in 23h 55min 0.0s.[0m
+[92m2021-11-20 19:07:27 I/Net 879112070: Scheduled refresh login session in 19d 23h 55min 0.0s.[0m
+[92m2021-11-20 19:07:27 I/Bot 879112070: Reconnected successfully in 0.753s.[0m
+[0m2021-11-20 19:07:30 V/Net 879112070: Saving bdh session to cache[0m
+[0m2021-11-20 19:07:30 V/Net 879112070: Send: ConfigPushSvc.PushResp(ConfigPushSvc.PushResp)[0m
+[0m2021-11-20 19:07:30 V/Net 879112070: Recv: ConfigPushSvc.PushReq[0m
+[0m2021-11-20 19:10:46 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-20 19:10:46 V/Bot 879112070: [ventre测试群(867206822)] ventre(3279994851) -> [mirai:at:879112070][0m
+[0m2021-11-20 19:10:46 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-20 19:10:49 V/Bot 879112070: Group(867206822) <- 欢迎使用涩图机器人，基本使用方法：\n@Ventre 关键字  目前已有的关键字：\n1. 涩图\n2. 色图\n3. 聊天\n如果要查看具体功能，请输入 @Ventre 关键字 help\n例子  @Ventre 涩图 help[0m
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by retrofit2.Platform (file:/home/VentreBot-shadow-1.0-SNAPSHOT/lib/ventre_qq_robot-1.0-SNAPSHOT-all.jar) to constructor java.lang.invoke.MethodHandles$Lookup(java.lang.Class,int)
+WARNING: Please consider reporting this to the maintainers of retrofit2.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+ChatHandler.handleMessage
+[0m2021-11-20 19:12:05 V/Bot 879112070: ventre(3279994851) -> 对他人的[0m
+[0m2021-11-20 19:12:09 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-20 19:12:14 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-20 19:12:16 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-20 19:12:16 V/Bot 879112070: Friend(3279994851) <- [mirai:at:3279994851] 其他人唔夠你叻嘛~[0m
+[0m2021-11-20 19:12:16 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-20 19:12:17 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-20 19:12:17 V/Bot 879112070: [ventre测试群(867206822)] ventre(3279994851) -> [mirai:at:879112070][0m
+[0m2021-11-20 19:12:17 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-20 19:12:20 V/Bot 879112070: Group(867206822) <- 欢迎使用涩图机器人，基本使用方法：\n@Ventre 关键字  目前已有的关键字：\n1. 涩图\n2. 色图\n3. 聊天\n如果要查看具体功能，请输入 @Ventre 关键字 help\n例子  @Ventre 涩图 help[0m
+RepeatHander.handleMessage
+[0m2021-11-20 19:13:20 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 阿尔的啦(625079287) -> [mirai:quote:[31473],[0]][mirai:at:787111584] [发呆][0m
+RepeatHander.handleMessage
+[0m2021-11-20 19:13:35 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 阿尔的啦(625079287) -> 乳贴🐂[0m
+RepeatHander.handleMessage
+[0m2021-11-20 19:19:09 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 心野游魂(2415633409) -> [mirai:image:{2F75AE71-A523-C5FB-E1EC-1460870091F9}.jpg][0m
+RepeatHander.handleMessage
+[0m2021-11-20 19:19:20 V/Bot 879112070: [碧蓝晒鱼场(556208166)] 心野游魂(2415633409) -> 应该就这几个角色[0m
+[0m2021-11-20 19:19:42 V/Net 879112070: Send: MessageSvc.PbSendMsg(MessageSvc.PbSendMsg)[0m
+[0m2021-11-20 19:19:42 V/Bot 879112070: [ventre测试群(867206822)] ventre(3279994851) -> [mirai:at:879112070][0m
+[0m2021-11-20 19:19:43 V/Net 879112070: Recv: MessageSvc.PbSendMsg[0m
+[0m2021-11-20 19:19:45 V/Bot 879112070: Group(867206822) <- 欢迎使用涩图机器人，基本使用方法：\n@Ventre 关键字  目前已有的关键字：\n1. 涩图\n2. 色图\n3. 聊天\n如果要查看具体功能，请输入 @Ventre 关键字 help\n例子  @Ventre 涩图 help[0m
+Exit code: 143
+*** End of transmission ***
