@@ -1,0 +1,39 @@
+{
+  "TAG" : ["涩图","色图"],
+  "help" : "涩图使用方法：\n @机器人 涩图 [关键字] \n @机器人 色图 [关键字] (这个会更色一些) \n 关键字为可选项目,可以包含多个关键字,使用空格隔开\n 例子： @派蒙 涩图 可莉 七七\n",
+
+  "Yander": {
+    "tags" : [
+      "izumiyuhina",
+      "miwa_futaba",
+      "mauve",
+      "hanakoizumi_yoruno",
+      "hasune",
+      "yuizaki_kazuya",
+      "muku_(apupop)",
+      "picpicgram",
+      "hiragana_iroiro",
+      "hatsuhi",
+      "kujou_danbo",
+      "hoshi",
+      "shiromochi_sakura",
+      "kouda_suzu",
+      "oizumi"
+    ],
+    "original" : true,
+    "page" : 20,
+    "recall" : 0
+  },
+
+  "Pixiv" : {
+    "original" : true,
+    "count" : 3,
+    "page" : 64,
+    "recall" : 0
+  },
+
+  "Lolicon" : {
+    "recall" : 100000
+  }
+
+}

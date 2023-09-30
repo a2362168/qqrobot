@@ -1,0 +1,43 @@
+{
+  //"qqId": 3279994851,
+  //"password": "awq6648182",
+  "qqId": 879112070,
+  "password": "z15171459935",
+  "heartbeat": "NONE",
+
+  "proxy": {
+    "on": true,
+    "host": "127.0.0.1",
+    "port": 10809
+  },
+
+  "features": {
+    "eroImage": true,
+    "chat": true,
+    "repeat": true
+  },
+
+  "repeat": {
+    "second": true,
+    "secondRatio": 0.3,
+    "third": true,
+    "thirdRatio": 0.7
+  },
+  "replyAt": {
+    "on": true
+  },
+  "qa": {
+    "on": true
+  },
+  "bullshit": {
+    "on": true,
+    "defaultWords": 100
+  },
+  "chatGPT": {
+    "apikey": "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",
+    "max_lenght": 2000,
+    "system": "你是一个少女",
+    "others": "你是一个电子音乐家"
+  }
+
+}
